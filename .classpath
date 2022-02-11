@@ -6,7 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="CinderellaStitchPlugin.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/CindyScript"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>
