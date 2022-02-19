@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project name="StitchPlugin" default="copy">
 
     <target name="init" description="setup paths">
@@ -14,7 +14,7 @@
     <!-- no changes necessary below this line -->
 
     <target name="compile" depends="init" description="compile Plugin for Cinderella">
-        <javac encoding="ISO-8859-1" debug="on" optimize="on"
+        <javac encoding="iso-8859-1" debug="on" optimize="on"
                srcdir="src" destdir="classes" target="1.7"
                source="1.7">
             <classpath>

@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.math.RoundingMode;
 import java.nio.ByteBuffer;
 
+import geometrischeFiguren.Circle;
 import geometrischeFiguren.EndcodeTajimaStitch;
 import geometrischeFiguren.Point;
 import geometrischeFiguren.Segment;
@@ -21,9 +22,8 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	}
 
 	// Variablen:
-	
-	private double aufloesung = 1;
 
+	private double aufloesung = 1;
 
 	// Größe der dargestellten Fläche in Cinderella
 	private Double[] ecke1;
@@ -34,41 +34,49 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	// Liste der Geometrischen Figuren
 	ArrayList<Point> punkteListe = new ArrayList<>();
 	ArrayList<Segment> segementListe = new ArrayList<>();
+	ArrayList<Circle> circleListe = new ArrayList<>();
 
 	@CindyScript("startProgrammAusgabe")
 	public void startProgrammAusgabe() {
 
-		ByteBuffer ausgabe = ByteBuffer.allocate(100);
+		ByteBuffer ausgabe = ByteBuffer.allocate(1000);
 		ByteBuffer test = ByteBuffer.allocate(100);
 		Point davor = new Point(getName(), 0, 0);
-		//ByteBuffer test3 = ByteBuffer.allocate(100);
+		// ByteBuffer test3 = ByteBuffer.allocate(100);
 		/*
-		for (Point s : punkteListe) {
-			ausgabe += s.getName();
-			ausgabe += "\n";
-		}
+		 * for (Point s : punkteListe) { ausgabe += s.getName(); ausgabe += "\n"; }
 		 */
 		for (Segment s : segementListe) {
-			
-			//byte[] test2 = s.stitchCode().array();
-			//test = s.stitchCode();
-			
-			ausgabe.put(s.stitchCode(davor).flip()) ;
+
+			// byte[] test2 = s.stitchCode().array();
+			// test = s.stitchCode();
+
+			ausgabe.put(s.stitchCode(davor,aufloesung).flip());
 			davor = s.getEndPunkt();
-			//test.flip();
-			//ausgabe.put(test);
-			//test.put(test3);
+			// test.flip();
+			// ausgabe.put(test);
+			// test.put(test3);
 		}
-		
+
+		for (Circle c : circleListe) {
+
+			// byte[] test2 = s.stitchCode().array();
+			// test = s.stitchCode();
+
+			ausgabe.put(c.stitchCode(davor,aufloesung).flip());
+			davor = c.getEndPunkt();
+			// test.flip();
+			// ausgabe.put(test);
+			// test.put(test3);
+		}
+
 		ByteBuffer test3 = ByteBuffer.allocate(ausgabe.position());
 		ausgabe.flip();
 		test3.put(ausgabe);
-		
-		DateiAusgabe.dstDatei(test3);
-		//ausgabe.flip();
-		//DateiAusgabe.dstDatei(ausgabe);
 
-		
+		DateiAusgabe.dstDatei(test3);
+		// ausgabe.flip();
+		// DateiAusgabe.dstDatei(ausgabe);
 
 	}
 
@@ -95,12 +103,10 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 			String name = arrayList[0];
 			String x = arrayList[1];
 			String y = arrayList[2];
-			
-	
-			//Ergibt damit die vorgabe von 1 Stich pro 0,1 im Koordinatensystem
-			double xDST = Double.valueOf(x)*10*aufloesung;
-			double yDST = Double.valueOf(y)*10*aufloesung;
-			
+
+			// Ergibt damit die vorgabe von 1 Stich pro 0,1 im Koordinatensystem
+			double xDST = Double.valueOf(x) * 10 * aufloesung;
+			double yDST = Double.valueOf(y) * 10 * aufloesung;
 
 			Point point = new Point(name, xDST, yDST);
 
@@ -133,14 +139,12 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 			int iterator = 0;
 			// Lineare Suche nach den Anfangs und Endpunkten der Strecke (ander einfache
 			// Suchen nicht möglich weil Liste nicht sortiert ist)
-			
+
 			/*
-			 * Möglicherweise Listesortieren lassen und dann mit Binärer suche drüber
-			 * Testen ob des Klappt. 
-			 * Collections.sort(liste);
-			 * Collections.binarySearch(list, key);
+			 * Möglicherweise Listesortieren lassen und dann mit Binärer suche drüber Testen
+			 * ob des Klappt. Collections.sort(liste); Collections.binarySearch(list, key);
 			 */
-			
+
 			while (iterator < punkteListe.size() && anfangsPunkt == null) {
 
 				if (punkteListe.get(iterator).getName().compareTo(anfangsPunktString) == 0) {
@@ -170,6 +174,30 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 
 		}
 
+	}
+
+	/**
+	 * 
+	 * @param forms
+	 */
+	@CindyScript("getCircles")
+	public void getCircles(ArrayList<String[]> forms) {
+
+		for (String[] arrayList : forms) {
+
+			String name = arrayList[0];
+			String mittelpunktString = arrayList[1];
+			String radius = arrayList[2];
+			String[] split;
+			split = mittelpunktString.split("[,\\x5B\\x5D]");
+
+			double[] mittelpunkt = { Double.valueOf(split[1]) * 10 * aufloesung,
+					Double.valueOf(split[2]) * 10 * aufloesung };
+			Circle circle = new Circle(name, mittelpunkt, Double.valueOf(radius) * 10 * aufloesung);
+
+			circleListe.add(circle);
+
+		}
 	}
 
 	/**

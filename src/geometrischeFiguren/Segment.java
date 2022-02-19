@@ -62,13 +62,13 @@ public class Segment {
 	 * @param aufloesung in welchem Verhältnis alles ausgegeben wird.
 	 * @return
 	 */
-	public ByteBuffer stitchCode(Point punktDavor) {
+	public ByteBuffer stitchCode(Point punktDavor, double aufloesung) {
 		
 		// Berechnen von zischenstichen. 5-7 mmm 2,5 - 3.0 mm
 		// brother max 5mm
 		// best 1,5mm
 		//double aufloesung = 1;
-		int abstaende = 15; // umgerechnet in nadelbewegungen mit 0,1mm
+		int abstaende = (int)(15*aufloesung); // umgerechnet in nadelbewegungen mit 0,1mm
 
 		int anzahlStiche = (int) (laenge() / abstaende); // aufgerundet, da sonst ein stich unter minimalabstand fällt
 		int stichZähler = 0;
