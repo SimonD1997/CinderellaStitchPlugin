@@ -8,8 +8,13 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 
+import javax.swing.JFileChooser;
+
+
 
 public class DateiAusgabe {
+	
+	private static File verzeichnis;
 
 	private static void standardFileSave(ByteBuffer text) {
 
@@ -52,11 +57,11 @@ public class DateiAusgabe {
 			// Text schreiben
 			writer.write(sb.toString());
 
-			// Datei schliessen nicht vergessen, sonst koennen Daten verloren gehen!
+			// Datei schließen nicht vergessen, sonst können Daten verloren gehen!
 			writer.close();
 
 		} catch (IOException e) {
-			// Moegliche Fehler: z.B. Datei oder Verzeichnis schreibgeschuetzt
+			// Mögliche Fehler: z.B. Datei oder Verzeichnis schreibgeschützte
 			System.out.println("Fehler beim Datei schreiben: " + e.getMessage());
 
 		}
@@ -90,6 +95,45 @@ public class DateiAusgabe {
 		}
 
 	}
+	
+	private static void fileAuswahl(ByteBuffer text) {
+		
+		JFileChooser chooser = new JFileChooser();
+		chooser.setCurrentDirectory(verzeichnis);
+		int retrival = chooser.showSaveDialog(null);
+		
+		if (retrival == JFileChooser.APPROVE_OPTION) {
+			File file = chooser.getSelectedFile();
+			
+			if (!file.getName().toLowerCase().endsWith(".dst")) {
+		        file = new File(file.getParentFile(), file.getName() + ".dst");
+		      }
+	        try {
+
+				// append or overwrite the file
+				boolean append = false;
+
+				FileChannel channel = extracted(file, append).getChannel();
+				// Flips this buffer. The limit is set to the current position and then
+				// the position is set to zero. If the mark is defined then it is discarded.
+				text.flip();
+
+				// Writes a sequence of bytes to this channel from the given buffer.
+				channel.write(text);
+
+				// close the channel
+				channel.close();
+
+	            
+	            
+	        } catch (Exception ex) {
+	            ex.printStackTrace();
+	        }
+	    }
+		//Um beim nächsten Speichern im selben Verzeichnis zu starten
+		verzeichnis = chooser.getCurrentDirectory();
+		
+	}
 
 	private static FileOutputStream extracted(File file, boolean append) throws FileNotFoundException {
 		return new FileOutputStream(file, append);
@@ -108,7 +152,7 @@ public class DateiAusgabe {
 		ausgabe = "LA:turtlestitch" + space + space + space + end1 + end2;
 		ausgabe += "ST:3" + space + space + space + space + space + space + end2;// TODO noch automatisiern
 		ausgabe += "CO:1" + space + space + end2;
-		ausgabe += "+X:100"  + space + space + end2;// TODO noch automatisiern
+		ausgabe += "+X:100"  + space + space + end2;// TODO noch automatisieren
 		ausgabe += "-X:0" + space + space + space + space + end2;// TODO noch automatisiern
 		ausgabe += "+Y:0" + space + space + space + space + end2;// TODO noch automatisiern
 		ausgabe += "-Y:0" + space + space + space + space + end2; // TODO noch automatisiern
@@ -144,6 +188,7 @@ public class DateiAusgabe {
 		buffer.put(bytes);
 
 		standardFileSave(buffer);
+		//fileAuswahl(buffer);
 
 	}
 

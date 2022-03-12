@@ -1,6 +1,6 @@
 
 import java.util.ArrayList;
-import java.math.RoundingMode;
+
 import java.nio.ByteBuffer;
 
 import geometrischeFiguren.Circle;
@@ -41,7 +41,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 
 		ByteBuffer ausgabe = ByteBuffer.allocate(1000);
 		ByteBuffer test = ByteBuffer.allocate(100);
-		Point davor = new Point(getName(), 0, 0);
+		Point davor = segementListe.get(1).getAnfangsPunkt();
 		// ByteBuffer test3 = ByteBuffer.allocate(100);
 		/*
 		 * for (Point s : punkteListe) { ausgabe += s.getName(); ausgabe += "\n"; }
@@ -51,7 +51,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 			// byte[] test2 = s.stitchCode().array();
 			// test = s.stitchCode();
 
-			ausgabe.put(s.stitchCode(davor,aufloesung).flip());
+			ausgabe.put(s.stitchCode2(davor, aufloesung).flip());
 			davor = s.getEndPunkt();
 			// test.flip();
 			// ausgabe.put(test);
@@ -63,18 +63,18 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 			// byte[] test2 = s.stitchCode().array();
 			// test = s.stitchCode();
 
-			ausgabe.put(c.stitchCode(davor,aufloesung).flip());
+			ausgabe.put(c.stitchCode(davor, aufloesung).flip());
 			davor = c.getEndPunkt();
 			// test.flip();
 			// ausgabe.put(test);
 			// test.put(test3);
 		}
 
-		ByteBuffer test3 = ByteBuffer.allocate(ausgabe.position());
+		ByteBuffer ausgabeOhneNullen = ByteBuffer.allocate(ausgabe.position());
 		ausgabe.flip();
-		test3.put(ausgabe);
+		ausgabeOhneNullen.put(ausgabe);
 
-		DateiAusgabe.dstDatei(test3);
+		DateiAusgabe.dstDatei(ausgabeOhneNullen);
 		// ausgabe.flip();
 		// DateiAusgabe.dstDatei(ausgabe);
 
@@ -98,13 +98,19 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	 */
 	@CindyScript("getPoints")
 	public void getPoints(ArrayList<String[]> forms) {
+		// Listen werden einmal angelegt, wenn PLugin geladen wird.
+		//Deswegen jedes mal Liste löschen wenn Methode aufgerrufen wird. 
+		// sonst füllt sich Liste immer weiter...
+		punkteListe.clear();  
+		
 		for (String[] arrayList : forms) {
 
 			String name = arrayList[0];
 			String x = arrayList[1];
 			String y = arrayList[2];
 
-			// Ergibt damit die vorgabe von 1 Stich pro 0,1 im Koordinatensystem
+			// Ergibt damit die vorgabe von 1 StichEinheit pro 0,1 im Koordinatensystem
+			// wenn aufloesung = 1;
 			double xDST = Double.valueOf(x) * 10 * aufloesung;
 			double yDST = Double.valueOf(y) * 10 * aufloesung;
 
@@ -122,7 +128,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	 */
 	@CindyScript("getSegments")
 	public void getSegments(ArrayList<String[]> forms) {
-
+		segementListe.clear();
 		for (String[] arrayList : forms) {
 
 			String name = arrayList[0];
@@ -157,7 +163,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 
 			Point endPunkt = null;
 			iterator = 0;
-			// Lineare Suche nach den Anfangs und Endpunkten der Strecke (ander einfache
+			// Lineare Suche nach den Anfangs und Endpunkte der Strecke (ander einfache
 			// Suchen nicht möglich weil Liste nicht sortiert ist)
 			while (iterator < punkteListe.size() && endPunkt == null) {
 
@@ -182,7 +188,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	 */
 	@CindyScript("getCircles")
 	public void getCircles(ArrayList<String[]> forms) {
-
+		circleListe.clear();
 		for (String[] arrayList : forms) {
 
 			String name = arrayList[0];
@@ -201,8 +207,8 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	}
 
 	/**
-	 * Möglicherweise alles notwenidge Programm mithilfe des
-	 * "import(loadProgramm())" in Cinderella laden lassen. Herhöht Komfort für
+	 * Möglicherweise alles notwendige Programm mithilfe des
+	 * "import(loadProgramm())" in Cinderella laden lassen. erhöht Komfort für
 	 * Anwender.
 	 * 
 	 * @return

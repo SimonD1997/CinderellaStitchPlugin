@@ -28,11 +28,11 @@ public class Test {
 		
 
 		String[] testArray6 = {"F","12.45","9.71"}; 
-		String[] testArray5 = {"E","4.15","1.68"};
-		String[] testArray4 = {"D","1.53","0.3"}; 
-		String[] testArray3 = {"C","4","2"};
-		String[] testArray2 = {"B","0","2"}; 
-		String[] testArray1 = {"A","0","0"};
+		String[] testArray5 = {"E","13","-6"};
+		String[] testArray4 = {"D","8","-2"}; 
+		String[] testArray3 = {"M","15.8","-3.28"};
+		String[] testArray2 = {"O","16.28","9.29"}; 
+		String[] testArray1 = {"L","1.58","10.19"};
 		testArrayList2.add(testArray1);
 		testArrayList2.add(testArray2);
 		testArrayList2.add(testArray3);
@@ -47,9 +47,9 @@ public class Test {
 		}
 		
 		ArrayList<String[]> testArrayList3 = new ArrayList<String[]>();
-		String[] testArray7 = {"a","Strecke(A;B)"};
-		String[] testArray8 = {"b","Strecke(B;C)"};
-		String[] testArray9 = {"c","Strecke(D;E)"};
+		String[] testArray7 = {"h","Strecke(L;O)"};
+		String[] testArray8 = {"d","Strecke(O;M)"};
+		String[] testArray9 = {"e","Strecke(M;L)"};
 		testArrayList3.add(testArray7);
 		testArrayList3.add(testArray8);
 		testArrayList3.add(testArray9);
@@ -57,12 +57,12 @@ public class Test {
 		
 		
 		ArrayList<String[]> testArrayList4 = new ArrayList<String[]>();
-		String[] testArray10 = {"C","[0,0]","5"};
-		String[] testArray11 = {"C0","[3.52,3.31]","1.3"};
-		String[] testArray12 = {"C1","[5.35,0.96]","1.58"};
+		//String[] testArray10 = {"C","[0,0]","5"};
+		//String[] testArray11 = {"C0","[3.52,3.31]","1.3"};
+		//String[] testArray12 = {"C1","[5.35,0.96]","1.58"};
 		
-		testArrayList4.add(testArray11);
-		testArrayList4.add(testArray12);
+		//testArrayList4.add(testArray11);
+		//testArrayList4.add(testArray12);
 		
 		test.getCircles(testArrayList4); 
 		
