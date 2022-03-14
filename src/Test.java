@@ -1,3 +1,10 @@
+/* ------------------------------------------------------------------
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public License
+# License as published by the Free Software Foundation; either
+# version 3 of the License, or (at your option) any later version.s
+# ------------------------------------------------------------------
+*/
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 
@@ -27,9 +34,9 @@ public class Test {
 		
 		
 
-		String[] testArray6 = {"F","12.45","9.71"}; 
-		String[] testArray5 = {"E","13","-6"};
-		String[] testArray4 = {"D","8","-2"}; 
+		String[] testArray6 = {"F","2","1"}; 
+		String[] testArray5 = {"E","13","15"};
+		String[] testArray4 = {"D","21","7"}; 
 		String[] testArray3 = {"M","15.8","-3.28"};
 		String[] testArray2 = {"O","16.28","9.29"}; 
 		String[] testArray1 = {"L","1.58","10.19"};
@@ -47,9 +54,9 @@ public class Test {
 		}
 		
 		ArrayList<String[]> testArrayList3 = new ArrayList<String[]>();
-		String[] testArray7 = {"h","Strecke(L;O)"};
-		String[] testArray8 = {"d","Strecke(O;M)"};
-		String[] testArray9 = {"e","Strecke(M;L)"};
+		String[] testArray7 = {"h","Strecke(F;E)"};
+		String[] testArray8 = {"d","Strecke(E;D)"};
+		String[] testArray9 = {"e","Strecke(D;F)"};
 		testArrayList3.add(testArray7);
 		testArrayList3.add(testArray8);
 		testArrayList3.add(testArray9);

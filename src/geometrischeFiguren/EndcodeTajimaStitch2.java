@@ -1,3 +1,13 @@
+/* ------------------------------------------------------------------
+# originaly from stitchcode.py
+# see: https://github.com/backface/stitchcode/blob/f56cf76ee49dfae4e3cd503e7d914cc50d67f893/stitchcode.py
+# ------------------------------------------------------------------
+# # This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public License
+# License as published by the Free Software Foundation; either
+# version 3 of the License, or (at your option) any later version.s
+*/
+
 package geometrischeFiguren;
 
 public class EndcodeTajimaStitch2 {

@@ -1,3 +1,10 @@
+/* ------------------------------------------------------------------
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public License
+# License as published by the Free Software Foundation; either
+# version 3 of the License, or (at your option) any later version.s
+# ------------------------------------------------------------------
+*/
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -187,8 +194,8 @@ public class DateiAusgabe {
 		bytes = ausgabe.getBytes();
 		buffer.put(bytes);
 
-		standardFileSave(buffer);
-		//fileAuswahl(buffer);
+		//standardFileSave(buffer);
+		fileAuswahl(buffer);
 
 	}
 
