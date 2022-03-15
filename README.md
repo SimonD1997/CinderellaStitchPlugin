@@ -66,5 +66,5 @@ http://www.softsea.com/download/Embroidermodder.html
 https://www.freesierrasoftware.com/site/get%20it%20now.htm
 
 ## Folgende Dinge sind für die Nutzung des Plugins zu beachten:
-1.Es können aktuell keine langen Sprungtstiche/Jump Stiche/Jump Stiches gestickt werden. In der Ausgabe resultiert dies in einem verschobenen Bild. Zur Umgehung des Problems müssen zur Verbindungstiche eingefügt werden. Es muss außerdem beachtet werden, dass die Strecken und Kreise in der Reihenfolge ihre Erstellung in Cinderella ausgegeben werden. Auch die benötigten Abstände beziehen sich auf diese Reihenfolge bei der Ausgabe und nicht auf die realen Abstände zwischen den Figuren in Cinderella
-2.Es können aktuell nur Strecken und Kreise ausgeben werden. Alle anderen Objekte können natürlich zur Konstruktion genutzt werden, finden sich aber nicht in der Stichdatei. 
+1. Es können aktuell keine langen Sprungtstiche/Jump Stiche/Jump Stiches gestickt werden. In der Ausgabe resultiert dies in einem verschobenen Bild. Zur Umgehung des Problems müssen zur Verbindungstiche eingefügt werden. Es muss außerdem beachtet werden, dass die Strecken und Kreise in der Reihenfolge ihre Erstellung in Cinderella ausgegeben werden. Auch die benötigten Abstände beziehen sich auf diese Reihenfolge bei der Ausgabe und nicht auf die realen Abstände zwischen den Figuren in Cinderella
+2. Es können aktuell nur Strecken und Kreise ausgeben werden. Alle anderen Objekte können natürlich zur Konstruktion genutzt werden, finden sich aber nicht in der Stichdatei. 
