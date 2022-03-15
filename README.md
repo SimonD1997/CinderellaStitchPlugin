@@ -1,6 +1,10 @@
 # CinderellaStitchPlugin
 Plugin for geometry software Cinderella to export an stitch file for embroidery
 
+Die Java-Klassen befinden sich unter:
+
+https://github.com/SimonD1997/CinderellaStitchPlugin/tree/bachelor/src
+
 ## Installationsanleitung für das Plugin:
 
 Unter dem aktuellen [Releases](https://github.com/SimonD1997/CinderellaStitchPlugin/releases/) findet sich die **CinderellaStitchPlugin.jar** die Heruntergeladen und dem Plugin-Verzeichnis der Cinderella-Installation hinzugefügt werden muss. 
