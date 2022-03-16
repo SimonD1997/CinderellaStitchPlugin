@@ -11,7 +11,7 @@ Unter dem aktuellen [Releases](https://github.com/SimonD1997/CinderellaStitchPlu
 
 Die Datei **Cinderella.Example.cdy** kann mit Cinderella geöffnet werden und enthält einen Button und im Script Editor bereits eingefüllten Code, der das Plugin läd und alle notwendigen Befehle ausführt. 
 
-Die Datei ..... ist eine Beispieldatei und wurde für die, mit der Entwicklung dieses Plugins verbundene, Bachelorarbeit erstellt. 
+Die Datei **KonstruktionBeispiel.cdy** ist eine Beispieldatei und wurde für die, mit der Entwicklung dieses Plugins verbundene, Bachelorarbeit erstellt. 
 
 ## Code für Cinderella 
 Falls das Plugin in einer eigenen Datei aufgerufen werden soll müssen folgende Befehle verwendet werden. 
