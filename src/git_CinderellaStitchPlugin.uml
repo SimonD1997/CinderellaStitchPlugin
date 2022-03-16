@@ -1,2 +1,1871 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xHlBAKCIEeyE1JJ91unouw" name="git_CinderellaStitchPlugin"/>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_se25cKOpEeyBecvvC5G1RA" name="git_CinderellaStitchPlugin">
+    <eAnnotations xmi:id="_skZgwKOpEeyBecvvC5G1RA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_skZgwaOpEeyBecvvC5G1RA" source="codegen">
+        <details xmi:id="_skZgwqOpEeyBecvvC5G1RA" key="codegenDirectory" value="/git_CinderellaStitchPlugin/src"/>
+        <details xmi:id="_s7w34KOpEeyBecvvC5G1RA" key="AssociatedSourceCode" value="/git_CinderellaStitchPlugin/src/CinderellaStitchPlugin.java;3239926512/1;/git_CinderellaStitchPlugin/src/DateiAusgabe.java;3262586128/1;/git_CinderellaStitchPlugin/src/Test.java;3037185348/1;/git_CinderellaStitchPlugin/src/geometrischeFiguren/Circle.java;225212053/1;/git_CinderellaStitchPlugin/src/geometrischeFiguren/EndcodeTajimaStitch.java;402115646/1;/git_CinderellaStitchPlugin/src/geometrischeFiguren/EndcodeTajimaStitch2.java;3635130773/1;/git_CinderellaStitchPlugin/src/geometrischeFiguren/Point.java;3492019896/1;/git_CinderellaStitchPlugin/src/geometrischeFiguren/Segment.java;3893622493/1;"/>
+        <details xmi:id="_xIeeAKOrEeyBecvvC5G1RA" key="codeGenerator" value="com.yattasolutions.codegen.oaw.codeGenerator"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_sw8vAKOpEeyBecvvC5G1RA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_sw8vAaOpEeyBecvvC5G1RA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_sw9WEKOpEeyBecvvC5G1RA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_sw9WEaOpEeyBecvvC5G1RA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_sw9WEqOpEeyBecvvC5G1RA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_sw9WE6OpEeyBecvvC5G1RA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_sw9WFKOpEeyBecvvC5G1RA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_sw9WFaOpEeyBecvvC5G1RA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_sw99IKOpEeyBecvvC5G1RA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_swmJsKOpEeyBecvvC5G1RA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_swmJsaOpEeyBecvvC5G1RA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_szwLYKOpEeyBecvvC5G1RA" name="ArrayList"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_swmwwKOpEeyBecvvC5G1RA" name="nio">
+        <packagedElement xmi:type="uml:Package" xmi:id="_sw32gKOpEeyBecvvC5G1RA" name="channels">
+          <packagedElement xmi:type="uml:Class" xmi:id="_sz58YaOpEeyBecvvC5G1RA" name="FileChannel"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_sw4dkKOpEeyBecvvC5G1RA" name="charset">
+          <packagedElement xmi:type="uml:Class" xmi:id="_sz6jcaOpEeyBecvvC5G1RA" name="Charset"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_szxZgaOpEeyBecvvC5G1RA" name="ByteBuffer"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_sw3PcKOpEeyBecvvC5G1RA" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_sz2SAKOpEeyBecvvC5G1RA" name="File"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_sz3gIaOpEeyBecvvC5G1RA" name="FileNotFoundException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_sz4HMaOpEeyBecvvC5G1RA" name="FileOutputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_sz4uQKOpEeyBecvvC5G1RA" name="IOException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_sz4uQqOpEeyBecvvC5G1RA" name="OutputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_sz5VUaOpEeyBecvvC5G1RA" name="OutputStreamWriter"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_s0E7gKOpEeyBecvvC5G1RA" name="lang">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_s0E7gaOpEeyBecvvC5G1RA" name="Double"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_swmwwaOpEeyBecvvC5G1RA" name="geometrischeFiguren" visibility="private">
+      <packagedElement xmi:type="uml:Class" xmi:id="_sxvZMKOpEeyBecvvC5G1RA" name="Circle">
+        <ownedAttribute xmi:id="_s0YdgaOpEeyBecvvC5G1RA" name="name" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_s0ZEkaOpEeyBecvvC5G1RA" name="radius">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_s0ZEkqOpEeyBecvvC5G1RA" name="mittelpunkt" type="_sx_Q0KOpEeyBecvvC5G1RA" association="_s0z7UKOpEeyBecvvC5G1RA">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_s0ZroKOpEeyBecvvC5G1RA" value="new Point(&quot;&quot;, 0, 0)"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_s0ZroaOpEeyBecvvC5G1RA" name="anfangsPunkt" visibility="package" type="_sx_Q0KOpEeyBecvvC5G1RA" association="_s0z7U6OpEeyBecvvC5G1RA"/>
+        <ownedAttribute xmi:id="_s0aSsKOpEeyBecvvC5G1RA" name="endPunkt" visibility="package" type="_sx_Q0KOpEeyBecvvC5G1RA" association="_s00iYaOpEeyBecvvC5G1RA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0nuEKOpEeyBecvvC5G1RA" name="Circle" specification="_sxxOYKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0nuEaOpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0nuEqOpEeyBecvvC5G1RA" name="mittelpunkt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s0nuE6OpEeyBecvvC5G1RA" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0nuFKOpEeyBecvvC5G1RA" name="radius">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0nuFaOpEeyBecvvC5G1RA" type="_sxvZMKOpEeyBecvvC5G1RA" direction="return"/>
+          <language>java</language>
+          <body>this.radius = radius;&#xD;
+		this.mittelpunkt.setName(name+ &quot;Mittelpunkt&quot;);&#xD;
+		this.mittelpunkt.setX(mittelpunkt[0]);&#xD;
+		this.mittelpunkt.setY(mittelpunkt[1]);&#xD;
+		this.name = name;&#xD;
+		anfangsPunkt = kreisGleichung(0);&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0nuFqOpEeyBecvvC5G1RA" name="setName" specification="_sxzDkKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0nuF6OpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.name = name;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0nuGKOpEeyBecvvC5G1RA" name="getEndPunkt" specification="_sxzqoKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0nuGaOpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+          <language>java</language>
+          <body>return this.endPunkt;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0nuGqOpEeyBecvvC5G1RA" name="getAnfangsPunkt" specification="_sx0RsKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0nuG6OpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+          <language>java</language>
+          <body>return this.anfangsPunkt;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0oVIKOpEeyBecvvC5G1RA" name="getName" specification="_sx0RsaOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0oVIaOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.name;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0oVIqOpEeyBecvvC5G1RA" name="stitchCode" specification="_sz9mwqOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0oVI6OpEeyBecvvC5G1RA" name="punktDavor" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <ownedParameter xmi:id="_s0oVJKOpEeyBecvvC5G1RA" name="aufloesung">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0oVJaOpEeyBecvvC5G1RA" type="_szxZgaOpEeyBecvvC5G1RA" direction="return"/>
+          <language>java</language>
+          <body>// Berechnen von zischenstichen. 5-7 mm 2,5 - 3.0 mm&#xD;
+		// brother max 5mm&#xD;
+		// best 1,5mm&#xD;
+		// double aufloesung = 1;&#xD;
+		int abstaende = (int)(10*aufloesung); // umgerechnet in nadelbewegungen mit 0,1mm&#xD;
+&#xD;
+		int anzahlStiche = (int) (umfang() / abstaende); // aufgerundet, da sonst ein stich unter minimalabstand fällt&#xD;
+		int stichZaehler = 0;&#xD;
+&#xD;
+		ByteBuffer ausgabe = ByteBuffer.allocate(anzahlStiche * 3 + 9); // TODO noch schauen, das der Buffer nicht zu&#xD;
+		// groß ist, sonst gibt es zu viele stellen.&#xD;
+&#xD;
+		long bildWechselX = (long) anfangsPunkt.x - (long) punktDavor.x;&#xD;
+		long bildWechselY = (long) anfangsPunkt.y - (long) punktDavor.y;&#xD;
+&#xD;
+		// Bildwechsel zur nächsten Form mithilfe eines oder mehrere Sprungstiche&#xD;
+		// führt zu Fehlen, da mehrere Sprungstiche als TRIM Command interpretiert werden könnten&#xD;
+		while (bildWechselX > 121 || bildWechselX &lt; -121 || bildWechselY > 121 || bildWechselY &lt; -121) {&#xD;
+			&#xD;
+			if (bildWechselX > 121) {&#xD;
+				ausgabe.put(EndcodeTajimaStitch.encodeDST( 121, 0, true));&#xD;
+				bildWechselX =- 121;&#xD;
+			}else if (bildWechselX &lt; -121) {&#xD;
+				ausgabe.put(EndcodeTajimaStitch.encodeDST( -121, 0, true));&#xD;
+				bildWechselX =+ 121;&#xD;
+			} else if (bildWechselY > 121) {&#xD;
+				ausgabe.put(EndcodeTajimaStitch.encodeDST(0, 121, true));&#xD;
+				bildWechselY =- 121;&#xD;
+			} else if (bildWechselY &lt; -121) {&#xD;
+				ausgabe.put(EndcodeTajimaStitch.encodeDST( 0, -121, true));&#xD;
+				bildWechselY =+ 121;&#xD;
+			} &#xD;
+			&#xD;
+			stichZaehler += 1;&#xD;
+			&#xD;
+		}&#xD;
+&#xD;
+		ausgabe.put(EndcodeTajimaStitch.encodeDST(bildWechselX, bildWechselY, true));&#xD;
+&#xD;
+		ausgabe.put(EndcodeTajimaStitch.encodeDST(0, 0));&#xD;
+		stichZaehler += 2;&#xD;
+		&#xD;
+		&#xD;
+&#xD;
+		Point aktuellerPunkt = anfangsPunkt;&#xD;
+		Point naechsterPunkt = anfangsPunkt;&#xD;
+&#xD;
+		// zwischenschritte einzeichnen&#xD;
+		for (int i = 1; i &lt; anzahlStiche; i++) {&#xD;
+&#xD;
+			naechsterPunkt = kreisGleichung(((2*Math.PI) / anzahlStiche) * i);&#xD;
+&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST((long) naechsterPunkt.x - (long) aktuellerPunkt.x,&#xD;
+					(long) naechsterPunkt.y - (long) aktuellerPunkt.y));&#xD;
+			stichZaehler += 1;&#xD;
+&#xD;
+			aktuellerPunkt = naechsterPunkt;&#xD;
+		}&#xD;
+&#xD;
+		endPunkt = naechsterPunkt;&#xD;
+&#xD;
+		// falls es keine zwischenschritte gab, direkt den Endpunkt einzeichnen&#xD;
+		if (anzahlStiche == 1) {&#xD;
+&#xD;
+		} else {&#xD;
+&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST((int) anfangsPunkt.x - (int) aktuellerPunkt.x,&#xD;
+					(long) anfangsPunkt.y - (long) aktuellerPunkt.y));&#xD;
+			stichZaehler += 1;&#xD;
+&#xD;
+		}&#xD;
+&#xD;
+		ByteBuffer ausgabe2 = ByteBuffer.allocate((stichZaehler * 3)); // TODO noch schauen, das der Buffer nicht zu&#xD;
+		ausgabe.flip();&#xD;
+		ausgabe2.put(ausgabe); // groß ist, sonst gibt es zu viele stellen.&#xD;
+&#xD;
+		return (ausgabe);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0oVJqOpEeyBecvvC5G1RA" name="kreisGleichung" specification="_sx1f0KOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0oVJ6OpEeyBecvvC5G1RA" name="winkel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0oVKKOpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+          <language>java</language>
+          <body>double neuX = radius * Math.cos(winkel) + mittelpunkt.getX();&#xD;
+		double neuY = radius * Math.sin(winkel) + mittelpunkt.getY();&#xD;
+		Point point = new Point(this.name + winkel, neuX, neuY);&#xD;
+		//System.out.println(neuX + &quot;|&quot; +neuY);&#xD;
+		return point;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0oVKaOpEeyBecvvC5G1RA" name="umfang" specification="_sx2G4KOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0oVKqOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return 2 * radius * Math.PI;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_sxxOYKOpEeyBecvvC5G1RA" name="Circle" method="_s0nuEKOpEeyBecvvC5G1RA">
+          <eAnnotations xmi:id="_sxx1cqOpEeyBecvvC5G1RA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_sxycgKOpEeyBecvvC5G1RA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_sxxOYaOpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sxx1cKOpEeyBecvvC5G1RA" name="mittelpunkt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sxycgqOpEeyBecvvC5G1RA" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sxx1caOpEeyBecvvC5G1RA" name="radius">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sxycgaOpEeyBecvvC5G1RA" type="_sxvZMKOpEeyBecvvC5G1RA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sxzDkKOpEeyBecvvC5G1RA" name="setName" method="_s0nuFqOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_sxzDkaOpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sxzqoKOpEeyBecvvC5G1RA" name="getEndPunkt" method="_s0nuGKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_sz9mwKOpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sx0RsKOpEeyBecvvC5G1RA" name="getAnfangsPunkt" method="_s0nuGqOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_sz9mwaOpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sx0RsaOpEeyBecvvC5G1RA" name="getName" method="_s0oVIKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_sx04wKOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sx1f0KOpEeyBecvvC5G1RA" name="kreisGleichung" visibility="private" method="_s0oVJqOpEeyBecvvC5G1RA">
+          <ownedComment xmi:id="_s0t0taOpEeyBecvvC5G1RA">
+            <body>&#xD;
+	 * @param neuX&#xD;
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_sx1f0aOpEeyBecvvC5G1RA" name="winkel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sz-N0qOpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sx2G4KOpEeyBecvvC5G1RA" name="umfang" visibility="private" method="_s0oVKaOpEeyBecvvC5G1RA">
+          <ownedComment xmi:id="_s0t0tqOpEeyBecvvC5G1RA">
+            <body>&#xD;
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_sx2G4aOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sz9mwqOpEeyBecvvC5G1RA" name="stitchCode" method="_s0oVIqOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_sz-N0KOpEeyBecvvC5G1RA" name="punktDavor" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <ownedParameter xmi:id="_sz-N0aOpEeyBecvvC5G1RA" name="aufloesung">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0OFcKOpEeyBecvvC5G1RA" type="_szxZgaOpEeyBecvvC5G1RA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sx5xQKOpEeyBecvvC5G1RA" name="EndcodeTajimaStitch">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0o8MKOpEeyBecvvC5G1RA" name="encodeDST" specification="_sx6_YKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0o8MaOpEeyBecvvC5G1RA" name="dx">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0o8MqOpEeyBecvvC5G1RA" name="dy">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0o8M6OpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s0o8NKOpEeyBecvvC5G1RA" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return encodeDST(dx, dy, false);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0o8NaOpEeyBecvvC5G1RA" name="encodeDST" specification="_sx8NgKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0o8NqOpEeyBecvvC5G1RA" name="dx">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0o8N6OpEeyBecvvC5G1RA" name="dy">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0o8OKOpEeyBecvvC5G1RA" name="jump">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0o8OaOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s0o8OqOpEeyBecvvC5G1RA" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>byte[] byteArray = {0,0,0};&#xD;
+		byte b1 = 0;&#xD;
+		byte b2 = 0;&#xD;
+		byte b3 = 0;&#xD;
+&#xD;
+		if (dx > 40) {&#xD;
+			b3 += 0x04;&#xD;
+			dx -= 81;&#xD;
+		}&#xD;
+		if (dx &lt; -40) {&#xD;
+			b3 += 0x08;&#xD;
+			dx += 81;&#xD;
+		}&#xD;
+		if (dy > 40) {&#xD;
+			b3 += 0x20;&#xD;
+			dy -= 81;&#xD;
+		}&#xD;
+		if (dy &lt; -40) {&#xD;
+			b3 += 0x10;&#xD;
+			dy += 81;&#xD;
+		}&#xD;
+		if (dx > 13) {&#xD;
+			b2 += 0x04;&#xD;
+			dx -= 27;&#xD;
+		}&#xD;
+		if (dx &lt; -13) {&#xD;
+			b2 += 0x08;&#xD;
+			dx += 27;&#xD;
+		}&#xD;
+		if (dy > 13) {&#xD;
+			b2 += 0x20;&#xD;
+			dy -= 27;&#xD;
+		}&#xD;
+		if (dy &lt; -13) {&#xD;
+			b2 += 0x10;&#xD;
+			dy += 27;&#xD;
+		}&#xD;
+		if (dx > 4) {&#xD;
+			b1 += 0x04;&#xD;
+			dx -= 9;&#xD;
+		}&#xD;
+		if (dx &lt; -4) {&#xD;
+			b1 += 0x08;&#xD;
+			dx += 9;&#xD;
+		}&#xD;
+		if (dy > 4) {&#xD;
+			b1 += 0x20;&#xD;
+			dy -= 9;&#xD;
+		}&#xD;
+		if (dy &lt; -4) {&#xD;
+			b1 += 0x10;&#xD;
+			dy += 9;&#xD;
+		}&#xD;
+		if (dx > 1) {&#xD;
+			b2 += 0x01;&#xD;
+			dx -= 3;&#xD;
+		}&#xD;
+		if (dx &lt; -1) {&#xD;
+			b2 += 0x02;&#xD;
+			dx += 3;&#xD;
+		}&#xD;
+		if (dy > 1) {&#xD;
+			b2 += 0x80;&#xD;
+			dy -= 3;&#xD;
+		}&#xD;
+		if (dy &lt; -1) {&#xD;
+			b2 += 0x40;&#xD;
+			dy += 3;&#xD;
+		}&#xD;
+		if (dx > 0) {&#xD;
+			b1 += 0x01;&#xD;
+			dx -= 1;&#xD;
+		}&#xD;
+		if (dx &lt; 0) {&#xD;
+			b1 += 0x02;&#xD;
+			dx += 1;&#xD;
+		}&#xD;
+		if (dy > 0) {&#xD;
+			b1 += 0x80;&#xD;
+			dy -= 1;&#xD;
+		}&#xD;
+		if (dy &lt; 0) {&#xD;
+			b1 += 0x40;&#xD;
+			dy += 1;&#xD;
+		}&#xD;
+&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		//b3 += 0x83;&#xD;
+		&#xD;
+		//char b4 = 0x89;&#xD;
+		//b4 += b3;&#xD;
+		byteArray[0] = b1;&#xD;
+		byteArray[1] = b2;&#xD;
+		byteArray[2] = b3;&#xD;
+		&#xD;
+		//String s = &quot;&quot; + b1;&#xD;
+		//s += b2;&#xD;
+		&#xD;
+		if (jump == true) {&#xD;
+			byteArray[2] += (byte)0b10000011;&#xD;
+			//b3 += 0x83;&#xD;
+			//s += b3;&#xD;
+			&#xD;
+		}else {&#xD;
+			byteArray[2] += (byte)0b00000011;&#xD;
+			//b3 += 0x03;&#xD;
+			//s += b3;&#xD;
+		}&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		return byteArray;&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_sx6_YKOpEeyBecvvC5G1RA" name="encodeDST" isStatic="true" method="_s0o8MKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_sx6_YaOpEeyBecvvC5G1RA" name="dx">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sx6_YqOpEeyBecvvC5G1RA" name="dy">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sx6_Y6OpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sx6_ZKOpEeyBecvvC5G1RA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sx8NgKOpEeyBecvvC5G1RA" name="encodeDST" isStatic="true" method="_s0o8NaOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_sx8NgaOpEeyBecvvC5G1RA" name="dx">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sx8NgqOpEeyBecvvC5G1RA" name="dy">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sx8Ng6OpEeyBecvvC5G1RA" name="jump">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sx80kKOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sx80kaOpEeyBecvvC5G1RA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sx9boKOpEeyBecvvC5G1RA" name="EndcodeTajimaStitch2">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0pjQKOpEeyBecvvC5G1RA" name="encodeDST" specification="_sx-CsKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0pjQaOpEeyBecvvC5G1RA" name="dx">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0pjQqOpEeyBecvvC5G1RA" name="dy">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0pjQ6OpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return encodeDST(dx, dy, false);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0pjRKOpEeyBecvvC5G1RA" name="encodeDST" specification="_sx-pwKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0pjRaOpEeyBecvvC5G1RA" name="dx">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0pjRqOpEeyBecvvC5G1RA" name="dy">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0pjR6OpEeyBecvvC5G1RA" name="jump">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0pjSKOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>byte b1 = 0;&#xD;
+		byte b2 = 0;&#xD;
+		byte b3 = 0;&#xD;
+&#xD;
+		if (dx > 40) {&#xD;
+			b3 += 0x04;&#xD;
+			dx -= 81;&#xD;
+		}&#xD;
+		if (dx &lt; -40) {&#xD;
+			b3 += 0x08;&#xD;
+			dx += 81;&#xD;
+		}&#xD;
+		if (dy > 40) {&#xD;
+			b3 += 0x20;&#xD;
+			dy -= 81;&#xD;
+		}&#xD;
+		if (dy &lt; -40) {&#xD;
+			b3 += 0x10;&#xD;
+			dy += 81;&#xD;
+		}&#xD;
+		if (dx > 13) {&#xD;
+			b2 += 0x04;&#xD;
+			dx -= 27;&#xD;
+		}&#xD;
+		if (dx &lt; -13) {&#xD;
+			b2 += 0x08;&#xD;
+			dx += 27;&#xD;
+		}&#xD;
+		if (dy > 13) {&#xD;
+			b2 += 0x20;&#xD;
+			dy -= 27;&#xD;
+		}&#xD;
+		if (dy &lt; -13) {&#xD;
+			b2 += 0x10;&#xD;
+			dy += 27;&#xD;
+		}&#xD;
+		if (dx > 4) {&#xD;
+			b1 += 0x04;&#xD;
+			dx -= 9;&#xD;
+		}&#xD;
+		if (dx &lt; -4) {&#xD;
+			b1 += 0x08;&#xD;
+			dx += 9;&#xD;
+		}&#xD;
+		if (dy > 4) {&#xD;
+			b1 += 0x20;&#xD;
+			dy -= 9;&#xD;
+		}&#xD;
+		if (dy &lt; -4) {&#xD;
+			b1 += 0x10;&#xD;
+			dy += 9;&#xD;
+		}&#xD;
+		if (dx > 1) {&#xD;
+			b2 += 0x01;&#xD;
+			dx -= 3;&#xD;
+		}&#xD;
+		if (dx &lt; -1) {&#xD;
+			b2 += 0x02;&#xD;
+			dx += 3;&#xD;
+		}&#xD;
+		if (dy > 1) {&#xD;
+			b2 += 0x80;&#xD;
+			dy -= 3;&#xD;
+		}&#xD;
+		if (dy &lt; -1) {&#xD;
+			b2 += 0x40;&#xD;
+			dy += 3;&#xD;
+		}&#xD;
+		if (dx > 0) {&#xD;
+			b1 += 0x01;&#xD;
+			dx -= 1;&#xD;
+		}&#xD;
+		if (dx &lt; 0) {&#xD;
+			b1 += 0x02;&#xD;
+			dx += 1;&#xD;
+		}&#xD;
+		if (dy > 0) {&#xD;
+			b1 += 0x80;&#xD;
+			dy -= 1;&#xD;
+		}&#xD;
+		if (dy &lt; 0) {&#xD;
+			b1 += 0x40;&#xD;
+			dy += 1;&#xD;
+		}&#xD;
+&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		//b3 += 0x83;&#xD;
+		&#xD;
+		//char b4 = 0x89;&#xD;
+		//b4 += b3;&#xD;
+		String s = &quot;&quot; + b1;&#xD;
+		s += b2;&#xD;
+		&#xD;
+		if (jump= true) {&#xD;
+			b3 += 10000111;&#xD;
+			s += b3;&#xD;
+		}else {&#xD;
+			s += b3 + 00000011;&#xD;
+		}&#xD;
+		&#xD;
+		Byte b4 = (byte)0x83;&#xD;
+		s += String.format(&quot;%8s&quot;, Integer.toBinaryString(b4 &amp; 0xFF)).replace(' ', '0');&#xD;
+		&#xD;
+		&#xD;
+		return s;&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_sx-CsKOpEeyBecvvC5G1RA" name="encodeDST" isStatic="true" method="_s0pjQKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_sx-CsaOpEeyBecvvC5G1RA" name="dx">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sx-CsqOpEeyBecvvC5G1RA" name="dy">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sx-Cs6OpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sx-pwKOpEeyBecvvC5G1RA" name="encodeDST" isStatic="true" method="_s0pjRKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_sx-pwaOpEeyBecvvC5G1RA" name="dx">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sx-pwqOpEeyBecvvC5G1RA" name="dy">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sx-pw6OpEeyBecvvC5G1RA" name="jump">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_sx-pxKOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sx_Q0KOpEeyBecvvC5G1RA" name="Point">
+        <ownedAttribute xmi:id="_s0a5wKOpEeyBecvvC5G1RA" name="x" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_s0a5wqOpEeyBecvvC5G1RA" name="y" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_s0bg0aOpEeyBecvvC5G1RA" name="name" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0pjSaOpEeyBecvvC5G1RA" name="Point" specification="_syAe8KOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0pjSqOpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0pjS6OpEeyBecvvC5G1RA" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0pjTKOpEeyBecvvC5G1RA" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0pjTaOpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+          <language>java</language>
+          <body>this.name = name;&#xD;
+		this.x = x;&#xD;
+		this.y = y;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0qKUKOpEeyBecvvC5G1RA" name="setX" specification="_syBGAqOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0qKUaOpEeyBecvvC5G1RA" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.x = x;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0qKUqOpEeyBecvvC5G1RA" name="setY" specification="_syBtEKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0qKU6OpEeyBecvvC5G1RA" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.y = y;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0qKVKOpEeyBecvvC5G1RA" name="setName" specification="_syCUIKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0qKVaOpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.name = name;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0qKVqOpEeyBecvvC5G1RA" name="getX" specification="_syC7MKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0qKV6OpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.x;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0qKWKOpEeyBecvvC5G1RA" name="getY" specification="_syC7MqOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0qKWaOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.y;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0qxYKOpEeyBecvvC5G1RA" name="getName" specification="_syDiQaOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0qxYaOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.name;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_syAe8KOpEeyBecvvC5G1RA" name="Point" method="_s0pjSaOpEeyBecvvC5G1RA">
+          <eAnnotations xmi:id="_syAe9KOpEeyBecvvC5G1RA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_syBGAKOpEeyBecvvC5G1RA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_syAe8aOpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_syAe8qOpEeyBecvvC5G1RA" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_syAe86OpEeyBecvvC5G1RA" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_syBGAaOpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_syBGAqOpEeyBecvvC5G1RA" name="setX" method="_s0qKUKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_syBGA6OpEeyBecvvC5G1RA" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_syBtEKOpEeyBecvvC5G1RA" name="setY" method="_s0qKUqOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_syBtEaOpEeyBecvvC5G1RA" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_syCUIKOpEeyBecvvC5G1RA" name="setName" method="_s0qKVKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_syCUIaOpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_syC7MKOpEeyBecvvC5G1RA" name="getX" method="_s0qKVqOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_syC7MaOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_syC7MqOpEeyBecvvC5G1RA" name="getY" method="_s0qKWKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_syDiQKOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_syDiQaOpEeyBecvvC5G1RA" name="getName" method="_s0qxYKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_syDiQqOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_syEwYKOpEeyBecvvC5G1RA" name="Segment">
+        <ownedAttribute xmi:id="_s0cH4KOpEeyBecvvC5G1RA" name="anfangsPunkt" visibility="package" type="_sx_Q0KOpEeyBecvvC5G1RA" association="_s00iZKOpEeyBecvvC5G1RA"/>
+        <ownedAttribute xmi:id="_s0cu8aOpEeyBecvvC5G1RA" name="endPunkt" visibility="package" type="_sx_Q0KOpEeyBecvvC5G1RA" association="_s01JcaOpEeyBecvvC5G1RA"/>
+        <ownedAttribute xmi:id="_s0dWAKOpEeyBecvvC5G1RA" name="name" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0qxYqOpEeyBecvvC5G1RA" name="Segment" specification="_sz_b8KOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0qxY6OpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0qxZKOpEeyBecvvC5G1RA" name="anfangsPunkt" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <ownedParameter xmi:id="_s0qxZaOpEeyBecvvC5G1RA" name="endPunkt" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <ownedParameter xmi:id="_s0qxZqOpEeyBecvvC5G1RA" type="_syEwYKOpEeyBecvvC5G1RA" direction="return"/>
+          <language>java</language>
+          <body>this.anfangsPunkt = anfangsPunkt;&#xD;
+		this.endPunkt = endPunkt;&#xD;
+		this.name = name;&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0qxZ6OpEeyBecvvC5G1RA" name="setAnfangsPunkt" specification="_s0AqEKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0qxaKOpEeyBecvvC5G1RA" name="anfangsPunkt" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <language>java</language>
+          <body>this.anfangsPunkt = anfangsPunkt;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0qxaaOpEeyBecvvC5G1RA" name="setEndpunkt" specification="_s0AqEqOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0qxaqOpEeyBecvvC5G1RA" name="endPunkt" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <language>java</language>
+          <body>this.endPunkt = endPunkt;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0rYcKOpEeyBecvvC5G1RA" name="setName" specification="_syHMoKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0rYcaOpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.name = name;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0rYcqOpEeyBecvvC5G1RA" name="getAnfangsPunkt" specification="_syHzsKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0rYc6OpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+          <language>java</language>
+          <body>return this.anfangsPunkt;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0rYdKOpEeyBecvvC5G1RA" name="getEndPunkt" specification="_syIawKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0rYdaOpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+          <language>java</language>
+          <body>return this.endPunkt;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0r_gKOpEeyBecvvC5G1RA" name="getName" specification="_syIawaOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0r_gaOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.name;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0smkKOpEeyBecvvC5G1RA" name="stitchCode2" specification="_s0BRIaOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0smkaOpEeyBecvvC5G1RA" name="punktDavor" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <ownedParameter xmi:id="_s0smkqOpEeyBecvvC5G1RA" name="aufloesung">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0smk6OpEeyBecvvC5G1RA" type="_szxZgaOpEeyBecvvC5G1RA" direction="return"/>
+          <language>java</language>
+          <body>// Berechnen von zischenstichen. 5-7 mmm 2,5 - 3.0 mm&#xD;
+		// brother max 5mm&#xD;
+		// best 1,5mm&#xD;
+		// double aufloesung = 1;&#xD;
+		int abstaende = (int) (15 * aufloesung); // umgerechnet in Nadelbewegungen mit 0,1mm&#xD;
+&#xD;
+		int anzahlStiche = (int) (laenge() / abstaende); // abgerundet, da sonst ein Stich unter Minimalabstand fällt&#xD;
+		int stichZaehler = 0;&#xD;
+&#xD;
+		ByteBuffer ausgabe = ByteBuffer.allocate(10000); // TODO noch schauen, das der Buffer nicht zu&#xD;
+		// groß ist, sonst gibt es zu viele stellen.&#xD;
+&#xD;
+		if (punktDavor.equals(this.anfangsPunkt)) {&#xD;
+&#xD;
+			stichZaehler += 0;&#xD;
+		} else {&#xD;
+			long bildWechselX = (long) anfangsPunkt.x - (long) punktDavor.x;&#xD;
+			long bildWechselY = (long) anfangsPunkt.y - (long) punktDavor.y;&#xD;
+&#xD;
+			// Bildwechsel zur nächsten Form mithilfe eines oder mehrer Sprungstiche&#xD;
+			while (bildWechselX > 121 || bildWechselX &lt; -121 || bildWechselY > 121 || bildWechselY &lt; -121) {&#xD;
+&#xD;
+				long xAusgabeSpeicher = 0;&#xD;
+				long yAusgabeSpeicher = 0;&#xD;
+				if (bildWechselX > 121) {&#xD;
+					xAusgabeSpeicher = 121;&#xD;
+					bildWechselX -= 121;&#xD;
+				} else if (bildWechselX &lt; -121) {&#xD;
+					xAusgabeSpeicher = -121;&#xD;
+					bildWechselX += 121;&#xD;
+				} else if (bildWechselY > 121) {&#xD;
+					yAusgabeSpeicher = 121;&#xD;
+					bildWechselY -= 121;&#xD;
+				} else if (bildWechselY &lt; -121) {&#xD;
+					yAusgabeSpeicher = -121;&#xD;
+					bildWechselY += 121;&#xD;
+				}&#xD;
+				ausgabe.put(EndcodeTajimaStitch.encodeDST(xAusgabeSpeicher, yAusgabeSpeicher, true));&#xD;
+&#xD;
+				stichZaehler += 1;&#xD;
+&#xD;
+			}&#xD;
+&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST(bildWechselX, bildWechselY, true));&#xD;
+&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST(0, 0));&#xD;
+			stichZaehler += 2;&#xD;
+&#xD;
+		}&#xD;
+		&#xD;
+		//Richtungsvektor &#xD;
+		long endpunktX = (long) endPunkt.x;&#xD;
+		long endpunktY = (long) endPunkt.y;&#xD;
+		long anfangspunktX = (long) anfangsPunkt.x;&#xD;
+		long anfangspunktY = (long) anfangsPunkt.y;&#xD;
+		&#xD;
+		long vekX = (endpunktX-anfangspunktX);&#xD;
+		long vekY = endpunktY-anfangspunktY;&#xD;
+		&#xD;
+		double aktuellerPunktX = anfangspunktX ;&#xD;
+		double aktuellerPunktY = anfangspunktY;&#xD;
+		&#xD;
+		double davorPunktX = anfangspunktX;&#xD;
+		double davorPunktY = anfangspunktY;&#xD;
+		&#xD;
+		//TODO Zwischnenschritte als Punkte berechnen und dann dazwischen die Vektoren &#xD;
+		// Mininimert möglicherwieise etwas die rundungsfehler des Ortsvektors&#xD;
+		// zwischenschritte einzeichnen&#xD;
+		for (int i = 1; i &lt; anzahlStiche; i++) {&#xD;
+			&#xD;
+			double testx = ((i/(double)anzahlStiche) *vekX);&#xD;
+			double testY =  ((i/(double)anzahlStiche) *vekY);&#xD;
+			&#xD;
+			aktuellerPunktX = anfangspunktX + ((i/(double)anzahlStiche) *vekX);&#xD;
+			aktuellerPunktY = anfangspunktY + ((i/(double)anzahlStiche) *vekY);&#xD;
+&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST((long)aktuellerPunktX-(long)davorPunktX,&#xD;
+					(long)aktuellerPunktY-(long)davorPunktY));&#xD;
+			&#xD;
+			davorPunktX = aktuellerPunktX;&#xD;
+			davorPunktY = aktuellerPunktY;&#xD;
+			&#xD;
+			stichZaehler += 1;&#xD;
+		}&#xD;
+		&#xD;
+		if (anzahlStiche == 0) {&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST(vekX,&#xD;
+					vekY,true));&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST(0, 0));&#xD;
+			stichZaehler += 2;&#xD;
+&#xD;
+			&#xD;
+			// falls es keine zwischenschritte gab, direkt den Endpunkt einzeichnen	&#xD;
+		}  else {&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST((long)endpunktX-(long)aktuellerPunktX ,&#xD;
+					(long)endpunktY-(long)aktuellerPunktY));&#xD;
+			stichZaehler += 1;&#xD;
+		}&#xD;
+&#xD;
+		ByteBuffer ausgabe2 = ByteBuffer.allocate((stichZaehler * 3) + 3);&#xD;
+		ausgabe.flip(); // verhindert, dass die restlichen stellen des unbeschriebenen buffer als null&#xD;
+						// werte ausgegeben werden.&#xD;
+		ausgabe2.put(ausgabe);&#xD;
+&#xD;
+		return (ausgabe);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0smlKOpEeyBecvvC5G1RA" name="stitchCode1" specification="_s0B4MKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0smlaOpEeyBecvvC5G1RA" name="punktDavor" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <ownedParameter xmi:id="_s0smlqOpEeyBecvvC5G1RA" name="aufloesung">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0sml6OpEeyBecvvC5G1RA" type="_szxZgaOpEeyBecvvC5G1RA" direction="return"/>
+          <language>java</language>
+          <body>// Berechnen von zischenstichen. 5-7 mmm 2,5 - 3.0 mm&#xD;
+		// brother max 5mm&#xD;
+		// best 1,5mm&#xD;
+		// double aufloesung = 1;&#xD;
+		int abstaende = (int) (15 * aufloesung); // umgerechnet in Nadelbewegungen mit 0,1mm&#xD;
+&#xD;
+		int anzahlStiche = (int) (laenge() / abstaende); // abgerundet, da sonst ein Stich unter Minimalabstand fällt&#xD;
+		int stichZaehler = 0;&#xD;
+&#xD;
+		ByteBuffer ausgabe = ByteBuffer.allocate(10000); // TODO noch schauen, das der Buffer nicht zu&#xD;
+		// groß ist, sonst gibt es zu viele stellen.&#xD;
+&#xD;
+		if (punktDavor.equals(this.anfangsPunkt)) {&#xD;
+&#xD;
+			stichZaehler += 0;&#xD;
+		} else {&#xD;
+			long bildWechselX = (long) anfangsPunkt.x - (long) punktDavor.x;&#xD;
+			long bildWechselY = (long) anfangsPunkt.y - (long) punktDavor.y;&#xD;
+&#xD;
+			// Bildwechsel zur nächsten Form mithilfe eines oder mehrer Sprungstiche&#xD;
+			while (bildWechselX > 121 || bildWechselX &lt; -121 || bildWechselY > 121 || bildWechselY &lt; -121) {&#xD;
+&#xD;
+				long xAusgabeSpeicher = 0;&#xD;
+				long yAusgabeSpeicher = 0;&#xD;
+				if (bildWechselX > 121) {&#xD;
+					xAusgabeSpeicher = 121;&#xD;
+					bildWechselX -= 121;&#xD;
+				} else if (bildWechselX &lt; -121) {&#xD;
+					xAusgabeSpeicher = -121;&#xD;
+					bildWechselX += 121;&#xD;
+				} else if (bildWechselY > 121) {&#xD;
+					yAusgabeSpeicher = 121;&#xD;
+					bildWechselY -= 121;&#xD;
+				} else if (bildWechselY &lt; -121) {&#xD;
+					yAusgabeSpeicher = -121;&#xD;
+					bildWechselY += 121;&#xD;
+				}&#xD;
+				ausgabe.put(EndcodeTajimaStitch.encodeDST(xAusgabeSpeicher, yAusgabeSpeicher, true));&#xD;
+&#xD;
+				stichZaehler += 1;&#xD;
+&#xD;
+			}&#xD;
+&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST(bildWechselX, bildWechselY, true));&#xD;
+&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST(0, 0));&#xD;
+			stichZaehler += 2;&#xD;
+&#xD;
+		}&#xD;
+		&#xD;
+		//Richtungsvektor &#xD;
+		long endpunktX = (long) endPunkt.x;&#xD;
+		long endpunktY = (long) endPunkt.y;&#xD;
+		long anfangspunktX = (long) anfangsPunkt.x;&#xD;
+		long anfangspunktY = (long) anfangsPunkt.y;&#xD;
+		&#xD;
+		long vekX = (endpunktX-anfangspunktX);&#xD;
+		long vekY = (endpunktY-anfangspunktY);&#xD;
+		&#xD;
+		long aktuellerPunktX = anfangspunktX ;&#xD;
+		long aktuellerPunktY = anfangspunktY;&#xD;
+		&#xD;
+		//TODO Zwischnenschritte als Punkte berechnen und dann dazwischen die Vektoren &#xD;
+		// Mininimert möglicherwieise etwas die rundungsfehler des Ortsvektors&#xD;
+		// zwischenschritte einzeichnen&#xD;
+		for (int i = 1; i &lt; anzahlStiche; i++) {&#xD;
+&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST((1/anzahlStiche) *vekX,&#xD;
+					(1/anzahlStiche) *vekY));&#xD;
+			aktuellerPunktX = (long)(anfangspunktX + ((double)(i/anzahlStiche) *vekX));&#xD;
+			aktuellerPunktY = (long)(anfangspunktY + ((double)(i/anzahlStiche) *vekY));&#xD;
+			stichZaehler += 1;&#xD;
+		}&#xD;
+		&#xD;
+		if (anzahlStiche == 0) {&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST(vekX,&#xD;
+					vekY,true));&#xD;
+			&#xD;
+			stichZaehler += 1;&#xD;
+&#xD;
+			&#xD;
+			// falls es keine zwischenschritte gab, direkt den Endpunkt einzeichnen	&#xD;
+		}  else {&#xD;
+			ausgabe.put(EndcodeTajimaStitch.encodeDST(endpunktX-aktuellerPunktX ,&#xD;
+					endpunktY-aktuellerPunktY));&#xD;
+			stichZaehler += 1;&#xD;
+		}&#xD;
+&#xD;
+		ByteBuffer ausgabe2 = ByteBuffer.allocate((stichZaehler * 3) + 3);&#xD;
+		ausgabe.flip(); // verhindert, dass die restlichen stellen des unbeschriebenen buffer als null&#xD;
+						// werte ausgegeben werden.&#xD;
+		ausgabe2.put(ausgabe);&#xD;
+&#xD;
+		return (ausgabe);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0smmKOpEeyBecvvC5G1RA" name="laenge" specification="_syJo4KOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0smmaOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return Math.sqrt((square(this.endPunkt.x - this.anfangsPunkt.x) + square(this.endPunkt.y - this.anfangsPunkt.y)));&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0smmqOpEeyBecvvC5G1RA" name="square" specification="_syKP8KOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0smm6OpEeyBecvvC5G1RA" name="zahl">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0smnKOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return zahl * zahl;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_syHMoKOpEeyBecvvC5G1RA" name="setName" method="_s0rYcKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_syHMoaOpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_syHzsKOpEeyBecvvC5G1RA" name="getAnfangsPunkt" method="_s0rYcqOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0AqFKOpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_syIawKOpEeyBecvvC5G1RA" name="getEndPunkt" method="_s0rYdKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0BRIKOpEeyBecvvC5G1RA" type="_sx_Q0KOpEeyBecvvC5G1RA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_syIawaOpEeyBecvvC5G1RA" name="getName" method="_s0r_gKOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_syJB0KOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_syJo4KOpEeyBecvvC5G1RA" name="laenge" visibility="private" method="_s0smmKOpEeyBecvvC5G1RA">
+          <ownedComment xmi:id="_s0ubwaOpEeyBecvvC5G1RA">
+            <body>&#xD;
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_syJo4aOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_syKP8KOpEeyBecvvC5G1RA" name="square" visibility="private" method="_s0smmqOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_syKP8aOpEeyBecvvC5G1RA" name="zahl">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_syKP8qOpEeyBecvvC5G1RA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sz_b8KOpEeyBecvvC5G1RA" name="Segment" method="_s0qxYqOpEeyBecvvC5G1RA">
+          <eAnnotations xmi:id="_s0ADAqOpEeyBecvvC5G1RA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_s0ADA6OpEeyBecvvC5G1RA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_sz_b8aOpEeyBecvvC5G1RA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0ADAKOpEeyBecvvC5G1RA" name="anfangsPunkt" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <ownedParameter xmi:id="_s0ADAaOpEeyBecvvC5G1RA" name="endPunkt" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <ownedParameter xmi:id="_s0ADBKOpEeyBecvvC5G1RA" type="_syEwYKOpEeyBecvvC5G1RA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_s0AqEKOpEeyBecvvC5G1RA" name="setAnfangsPunkt" method="_s0qxZ6OpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0AqEaOpEeyBecvvC5G1RA" name="anfangsPunkt" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_s0AqEqOpEeyBecvvC5G1RA" name="setEndpunkt" method="_s0qxaaOpEeyBecvvC5G1RA">
+          <ownedParameter xmi:id="_s0AqE6OpEeyBecvvC5G1RA" name="endPunkt" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_s0BRIaOpEeyBecvvC5G1RA" name="stitchCode2" method="_s0smkKOpEeyBecvvC5G1RA">
+          <ownedComment xmi:id="_s0t0t6OpEeyBecvvC5G1RA">
+            <body>&#xD;
+	 * @param aufloesung in welchem Verhältnis alles ausgegeben wird.&#xD;
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_s0BRIqOpEeyBecvvC5G1RA" name="punktDavor" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <ownedParameter xmi:id="_s0BRI6OpEeyBecvvC5G1RA" name="aufloesung">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0OsgKOpEeyBecvvC5G1RA" type="_szxZgaOpEeyBecvvC5G1RA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_s0B4MKOpEeyBecvvC5G1RA" name="stitchCode1" method="_s0smlKOpEeyBecvvC5G1RA">
+          <ownedComment xmi:id="_s0ubwKOpEeyBecvvC5G1RA">
+            <body>&#xD;
+	 * @param aufloesung in welchem Verhältnis alles ausgegeben wird.&#xD;
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_s0B4MaOpEeyBecvvC5G1RA" name="punktDavor" type="_sx_Q0KOpEeyBecvvC5G1RA"/>
+          <ownedParameter xmi:id="_s0B4MqOpEeyBecvvC5G1RA" name="aufloesung">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_s0OsgaOpEeyBecvvC5G1RA" type="_szxZgaOpEeyBecvvC5G1RA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_s0z7UKOpEeyBecvvC5G1RA" name="" memberEnd="_s0z7UaOpEeyBecvvC5G1RA _s0ZEkqOpEeyBecvvC5G1RA">
+        <ownedEnd xmi:id="_s0z7UaOpEeyBecvvC5G1RA" name="" type="_sxvZMKOpEeyBecvvC5G1RA" association="_s0z7UKOpEeyBecvvC5G1RA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_s0z7U6OpEeyBecvvC5G1RA" name="" memberEnd="_s0z7VKOpEeyBecvvC5G1RA _s0ZroaOpEeyBecvvC5G1RA">
+        <ownedEnd xmi:id="_s0z7VKOpEeyBecvvC5G1RA" name="" type="_sxvZMKOpEeyBecvvC5G1RA" association="_s0z7U6OpEeyBecvvC5G1RA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_s00iYaOpEeyBecvvC5G1RA" name="" memberEnd="_s00iYqOpEeyBecvvC5G1RA _s0aSsKOpEeyBecvvC5G1RA">
+        <ownedEnd xmi:id="_s00iYqOpEeyBecvvC5G1RA" name="" type="_sxvZMKOpEeyBecvvC5G1RA" association="_s00iYaOpEeyBecvvC5G1RA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_s00iZKOpEeyBecvvC5G1RA" name="" memberEnd="_s00iZaOpEeyBecvvC5G1RA _s0cH4KOpEeyBecvvC5G1RA">
+        <ownedEnd xmi:id="_s00iZaOpEeyBecvvC5G1RA" name="" type="_syEwYKOpEeyBecvvC5G1RA" association="_s00iZKOpEeyBecvvC5G1RA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_s01JcaOpEeyBecvvC5G1RA" name="" memberEnd="_s01JcqOpEeyBecvvC5G1RA _s0cu8aOpEeyBecvvC5G1RA">
+        <ownedEnd xmi:id="_s01JcqOpEeyBecvvC5G1RA" name="" type="_syEwYKOpEeyBecvvC5G1RA" association="_s01JcaOpEeyBecvvC5G1RA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_-V7osKOpEeyBecvvC5G1RA" client="_sxvZMKOpEeyBecvvC5G1RA" supplier="_sx5xQKOpEeyBecvvC5G1RA"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_DE7ucKOqEeyBecvvC5G1RA" client="_syEwYKOpEeyBecvvC5G1RA" supplier="_sx5xQKOpEeyBecvvC5G1RA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_swnX0KOpEeyBecvvC5G1RA" name="de">
+      <packagedElement xmi:type="uml:Package" xmi:id="_swnX0aOpEeyBecvvC5G1RA" name="cinderella">
+        <packagedElement xmi:type="uml:Package" xmi:id="_swnX0qOpEeyBecvvC5G1RA" name="api">
+          <packagedElement xmi:type="uml:Package" xmi:id="_swnX06OpEeyBecvvC5G1RA" name="cs">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_szynoKOpEeyBecvvC5G1RA" name="CindyScript"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_szzOsaOpEeyBecvvC5G1RA" name="CindyScriptPlugin"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_sw4dkaOpEeyBecvvC5G1RA" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_sw4dkqOpEeyBecvvC5G1RA" name="swing">
+        <packagedElement xmi:type="uml:Class" xmi:id="_sz7KgKOpEeyBecvvC5G1RA" name="JFileChooser"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_sxYz4KOpEeyBecvvC5G1RA" name="CinderellaStitchPlugin">
+      <generalization xmi:id="_s0LCI6OpEeyBecvvC5G1RA" general="_szzOsaOpEeyBecvvC5G1RA"/>
+      <ownedAttribute xmi:id="_s0QhsKOpEeyBecvvC5G1RA" name="aufloesung" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_s0QhsaOpEeyBecvvC5G1RA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_s0RIwaOpEeyBecvvC5G1RA" name="ecke1" visibility="private" type="_s0E7gaOpEeyBecvvC5G1RA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s0RIwqOpEeyBecvvC5G1RA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_s0Rv0qOpEeyBecvvC5G1RA" name="ecke2" visibility="private" type="_s0E7gaOpEeyBecvvC5G1RA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s0Rv06OpEeyBecvvC5G1RA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_s0SW4aOpEeyBecvvC5G1RA" name="ecke3" visibility="private" type="_s0E7gaOpEeyBecvvC5G1RA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s0SW4qOpEeyBecvvC5G1RA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_s0S98aOpEeyBecvvC5G1RA" name="ecke4" visibility="private" type="_s0E7gaOpEeyBecvvC5G1RA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s0S98qOpEeyBecvvC5G1RA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_s0TlAaOpEeyBecvvC5G1RA" name="punkteListe" visibility="package" type="_szwLYKOpEeyBecvvC5G1RA" association="_s0xfEKOpEeyBecvvC5G1RA">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_s0UMEaOpEeyBecvvC5G1RA" value="new ArrayList&lt;>()"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_s0UzIaOpEeyBecvvC5G1RA" name="segementListe" visibility="package" type="_szwLYKOpEeyBecvvC5G1RA" association="_s0yGIaOpEeyBecvvC5G1RA">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_s0VaMaOpEeyBecvvC5G1RA" value="new ArrayList&lt;>()"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_s0WBQaOpEeyBecvvC5G1RA" name="circleListe" visibility="package" type="_szwLYKOpEeyBecvvC5G1RA" association="_s0ytMaOpEeyBecvvC5G1RA">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_s0WoUaOpEeyBecvvC5G1RA" value="new ArrayList&lt;>()"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0i1kKOpEeyBecvvC5G1RA" name="getName" specification="_sxbQIKOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0i1kaOpEeyBecvvC5G1RA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return &quot;CinderellaStitchPlugin&quot;;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0lR0KOpEeyBecvvC5G1RA" name="getAuthor" specification="_sxeTcaOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0lR0aOpEeyBecvvC5G1RA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return &quot;Simon Doubleday&quot;;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0lR0qOpEeyBecvvC5G1RA" name="startProgrammAusgabe" specification="_sxgvsKOpEeyBecvvC5G1RA">
+        <language>java</language>
+        <body>ByteBuffer ausgabe = ByteBuffer.allocate(1000);
+		ByteBuffer test = ByteBuffer.allocate(100);
+		Point davor = punkteListe.get(0);
+		
+		//Erster Stich
+		//Jump Stich am Anfang vermeiden und ersten Einstich am Ausgangspunkt setzen
+		if(segementListe.isEmpty()) {
+			davor = circleListe.get(0).getAnfangsPunkt();
+		}else {
+			davor = segementListe.get(0).getAnfangsPunkt();
+		}
+		ausgabe.put(EndcodeTajimaStitch.encodeDST(0, 0));
+		// ByteBuffer test3 = ByteBuffer.allocate(100);
+		/*
+		 * for (Point s : punkteListe) { ausgabe += s.getName(); ausgabe += &quot;\n&quot;; }
+		 */
+		for (Segment s : segementListe) {
+
+			// byte[] test2 = s.stitchCode().array();
+			// test = s.stitchCode();
+
+			ausgabe.put(s.stitchCode2(davor, aufloesung).flip());
+			davor = s.getEndPunkt();
+			// test.flip();
+			// ausgabe.put(test);
+			// test.put(test3);
+		}
+
+		for (Circle c : circleListe) {
+
+			// byte[] test2 = s.stitchCode().array();
+			// test = s.stitchCode();
+
+			ausgabe.put(c.stitchCode(davor, aufloesung).flip());
+			davor = c.getEndPunkt();
+			// test.flip();
+			// ausgabe.put(test);
+			// test.put(test3);
+		}
+
+		ByteBuffer ausgabeOhneNullen = ByteBuffer.allocate(ausgabe.position());
+		ausgabe.flip();
+		ausgabeOhneNullen.put(ausgabe);
+
+		DateiAusgabe.dstDatei(ausgabeOhneNullen);
+		// ausgabe.flip();
+		// DateiAusgabe.dstDatei(ausgabe);
+
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0lR06OpEeyBecvvC5G1RA" name="getScreenbound" specification="_s0GJoKOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0l44KOpEeyBecvvC5G1RA" name="forms" type="_szwLYKOpEeyBecvvC5G1RA"/>
+        <language>java</language>
+        <body>ecke1 = forms.get(0);
+		ecke2 = forms.get(1);
+		ecke3 = forms.get(2);
+		ecke4 = forms.get(3);
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0l44aOpEeyBecvvC5G1RA" name="getPoints" specification="_s0HXw6OpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0l44qOpEeyBecvvC5G1RA" name="forms" type="_szwLYKOpEeyBecvvC5G1RA"/>
+        <language>java</language>
+        <body>punkteListe.clear();  
+		
+		for (String[] arrayList : forms) {
+
+			String name = arrayList[0];
+			String x = arrayList[1];
+			String y = arrayList[2];
+
+			// Ergibt damit die vorgabe von 1 StichEinheit pro 0,1 im Koordinatensystem
+			// wenn aufloesung = 1;
+			double xDST = Double.valueOf(x) * 10 * aufloesung;
+			double yDST = Double.valueOf(y) * 10 * aufloesung;
+
+			Point point = new Point(name, xDST, yDST);
+
+			punkteListe.add(point);
+
+		}
+
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0l446OpEeyBecvvC5G1RA" name="getSegments" specification="_s0Il46OpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0l45KOpEeyBecvvC5G1RA" name="forms" type="_szwLYKOpEeyBecvvC5G1RA"/>
+        <language>java</language>
+        <body>segementListe.clear();
+		for (String[] arrayList : forms) {
+
+			String name = arrayList[0];
+			String anfangsPunktString;
+			String endPunktString;
+			String definition = arrayList[1];
+			String[] split;
+			split = definition.split(&quot;[();]&quot;);
+
+			anfangsPunktString = split[1];
+			endPunktString = split[2];
+
+			Point anfangsPunkt = null;
+			int iterator = 0;
+			// Lineare Suche nach den Anfangs und Endpunkten der Strecke (ander einfache
+			// Suchen nicht möglich weil Liste nicht sortiert ist)
+
+			/*
+			 * Möglicherweise Listesortieren lassen und dann mit Binärer suche drüber Testen
+			 * ob des Klappt. Collections.sort(liste); Collections.binarySearch(list, key);
+			 */
+
+			while (iterator &lt; punkteListe.size() &amp;&amp; anfangsPunkt == null) {
+
+				if (punkteListe.get(iterator).getName().compareTo(anfangsPunktString) == 0) {
+					anfangsPunkt = punkteListe.get(iterator);
+
+				}
+
+				iterator += 1;
+			}
+
+			Point endPunkt = null;
+			iterator = 0;
+			// Lineare Suche nach den Anfangs und Endpunkte der Strecke (ander einfache
+			// Suchen nicht möglich weil Liste nicht sortiert ist)
+			while (iterator &lt; punkteListe.size() &amp;&amp; endPunkt == null) {
+
+				if (punkteListe.get(iterator).getName().compareTo(endPunktString) == 0) {
+					endPunkt = punkteListe.get(iterator);
+
+				}
+				iterator += 1;
+			}
+
+			Segment segment = new Segment(name, anfangsPunkt, endPunkt);
+
+			segementListe.add(segment);
+
+		}
+
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0l45aOpEeyBecvvC5G1RA" name="getCircles" specification="_s0J0A6OpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0l45qOpEeyBecvvC5G1RA" name="forms" type="_szwLYKOpEeyBecvvC5G1RA"/>
+        <language>java</language>
+        <body>circleListe.clear();
+		for (String[] arrayList : forms) {
+
+			String name = arrayList[0];
+			String mittelpunktString = arrayList[1];
+			String radius = arrayList[2];
+			String[] split;
+			split = mittelpunktString.split(&quot;[,\\x5B\\x5D]&quot;);
+
+			double[] mittelpunkt = { Double.valueOf(split[1]) * 10 * aufloesung,
+					Double.valueOf(split[2]) * 10 * aufloesung };
+			Circle circle = new Circle(name, mittelpunkt, Double.valueOf(radius) * 10 * aufloesung);
+
+			circleListe.add(circle);
+
+		}
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0mf8KOpEeyBecvvC5G1RA" name="loadProgramm" specification="_sxik4KOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0mf8aOpEeyBecvvC5G1RA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return (&quot;createtool([\&quot;Move\&quot;,\&quot;Point\&quot;,\&quot;Segment\&quot;,\&quot;Circle\&quot;],2,2,flipped->true);\n&quot;
+				+ &quot;\n&quot;
+				+ &quot;\n&quot;
+				+ &quot;\n&quot;
+				+ &quot;\n&quot;
+				+ &quot;programmAufruf():=(\n&quot;
+				+ &quot;use(\&quot;CinderellaStitchPlugin\&quot;);\n&quot;
+				+ &quot;println(Screenbounds());\n&quot;
+				+ &quot;println(getScreenbound(Screenbounds())); //getter im Plugin\n&quot;
+				+ &quot;\n&quot;
+				+ &quot;//Punkte abrufen\n&quot;
+				+ &quot;pts2;\n&quot;
+				+ &quot;forall(allpoints(),\n&quot;
+				+ &quot;pts1 = [[#,#.x,#.y]];\n&quot;
+				+ &quot;println(pts1);\n&quot;
+				+ &quot;pts2 = concat(pts2,pts1);\n&quot;
+				+ &quot;);\n&quot;
+				+ &quot;println(pts2);\n&quot;
+				+ &quot;getPoints(pts2); //getter im Plugin\n&quot;
+				+ &quot;\n&quot;
+				+ &quot;//Strecken abrufen\n&quot;
+				+ &quot;seg2;\n&quot;
+				+ &quot;forall(allsegments(),\n&quot;
+				+ &quot;seg1 = [[#,inspect(#,\&quot;definition\&quot;)]];\n&quot;
+				+ &quot;seg2 = concat(seg2,seg1);\n&quot;
+				+ &quot;);\n&quot;
+				+ &quot;println(seg2);\n&quot;
+				+ &quot;getSegments(seg2); //getter im Plugin\n&quot;
+				+ &quot;\n&quot;
+				+ &quot;//Strecken abrufen\n&quot;
+				+ &quot;circ2;\n&quot;
+				+ &quot;forall(allcircles(),\n&quot;
+				+ &quot;circ1 = [[#,#.center,#.radius]];\n&quot;
+				+ &quot;circ2 = concat(circ2,circ1);\n&quot;
+				+ &quot;);\n&quot;
+				+ &quot;println(circ2);\n&quot;
+				+ &quot;getCircles(circ2); //getter im Plugin\n&quot;
+				+ &quot;\n&quot;
+				+ &quot;startProgrammAusgabe();\n&quot;
+				+ &quot;clear(); //alle Variablen löschen\n&quot;
+				+ &quot;);\n&quot;
+				+ &quot;\n&quot;
+				+ &quot;programmAufruf();&quot;);
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_sxbQIKOpEeyBecvvC5G1RA" name="getName" method="_s0i1kKOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_sxceQKOpEeyBecvvC5G1RA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_sxeTcaOpEeyBecvvC5G1RA" name="getAuthor" method="_s0lR0KOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_sxe6gKOpEeyBecvvC5G1RA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_sxgvsKOpEeyBecvvC5G1RA" name="startProgrammAusgabe" method="_s0lR0qOpEeyBecvvC5G1RA"/>
+      <ownedOperation xmi:id="_sxik4KOpEeyBecvvC5G1RA" name="loadProgramm" method="_s0mf8KOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_sxjL8KOpEeyBecvvC5G1RA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_s0GJoKOpEeyBecvvC5G1RA" name="getScreenbound" method="_s0lR06OpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0GJoaOpEeyBecvvC5G1RA" name="forms" type="_szwLYKOpEeyBecvvC5G1RA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_s0HXw6OpEeyBecvvC5G1RA" name="getPoints" method="_s0l44aOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0HXxKOpEeyBecvvC5G1RA" name="forms" type="_szwLYKOpEeyBecvvC5G1RA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_s0Il46OpEeyBecvvC5G1RA" name="getSegments" method="_s0l446OpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0Il5KOpEeyBecvvC5G1RA" name="forms" type="_szwLYKOpEeyBecvvC5G1RA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_s0J0A6OpEeyBecvvC5G1RA" name="getCircles" method="_s0l45aOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0J0BKOpEeyBecvvC5G1RA" name="forms" type="_szwLYKOpEeyBecvvC5G1RA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_sxp5oKOpEeyBecvvC5G1RA" name="DateiAusgabe">
+      <ownedAttribute xmi:id="_s0X2cKOpEeyBecvvC5G1RA" name="verzeichnis" visibility="private" isStatic="true" type="_sz2SAKOpEeyBecvvC5G1RA" association="_s0zUQaOpEeyBecvvC5G1RA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0mf8qOpEeyBecvvC5G1RA" name="standardFileSave" specification="_s0LpMKOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0mf86OpEeyBecvvC5G1RA" name="text" type="_szxZgaOpEeyBecvvC5G1RA"/>
+        <language>java</language>
+        <body>// Test Kommentar&#xD;
+&#xD;
+		String dateiName = &quot;Test.dst&quot;;&#xD;
+&#xD;
+		OutputStream outputStream;&#xD;
+		OutputStreamWriter writer;&#xD;
+&#xD;
+		try {&#xD;
+			// Datei oeffnen.&#xD;
+			// Achtung: vorhandene Datei wird ueberschrieben!&#xD;
+			outputStream = new FileOutputStream(dateiName);&#xD;
+			writer = new OutputStreamWriter(outputStream, &quot;ASCII&quot;);&#xD;
+&#xD;
+			String test = &quot;Hallo:&quot;;&#xD;
+&#xD;
+			char test2 = (char) 0x83;&#xD;
+&#xD;
+			// &quot;ISO-8859-1&quot;&#xD;
+			Byte test3 = (byte) 0b10000011;&#xD;
+&#xD;
+			test += test2;&#xD;
+			test += test3;&#xD;
+&#xD;
+			byte[] bytes = test.getBytes();&#xD;
+&#xD;
+			writer.write(Charset.defaultCharset().displayName());&#xD;
+&#xD;
+			StringBuilder sb = new StringBuilder();&#xD;
+			for (byte b : bytes) {&#xD;
+				sb.append(String.format(&quot;%02X &quot;, b));&#xD;
+			}&#xD;
+			System.out.println(sb.toString());&#xD;
+			// prints &quot;FF 00 01 02 03 &quot;&#xD;
+&#xD;
+			// b= test.getBytes();&#xD;
+&#xD;
+			// Text schreiben&#xD;
+			writer.write(sb.toString());&#xD;
+&#xD;
+			// Datei schließen nicht vergessen, sonst können Daten verloren gehen!&#xD;
+			writer.close();&#xD;
+&#xD;
+		} catch (IOException e) {&#xD;
+			// Mögliche Fehler: z.B. Datei oder Verzeichnis schreibgeschützte&#xD;
+			System.out.println(&quot;Fehler beim Datei schreiben: &quot; + e.getMessage());&#xD;
+&#xD;
+		}&#xD;
+&#xD;
+		&#xD;
+		//byte[] bytes = text.getBytes();&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+&#xD;
+		try {&#xD;
+&#xD;
+			File file = new File(&quot;out.dst&quot;);&#xD;
+&#xD;
+			// append or overwrite the file&#xD;
+			boolean append = false;&#xD;
+&#xD;
+			FileChannel channel = extracted(file, append).getChannel();&#xD;
+			// Flips this buffer. The limit is set to the current position and then&#xD;
+			// the position is set to zero. If the mark is defined then it is discarded.&#xD;
+			text.flip();&#xD;
+&#xD;
+			// Writes a sequence of bytes to this channel from the given buffer.&#xD;
+			channel.write(text);&#xD;
+&#xD;
+			// close the channel&#xD;
+			channel.close();&#xD;
+&#xD;
+		} catch (IOException e) {&#xD;
+			System.out.println(&quot;I/O Error: &quot; + e.getMessage());&#xD;
+		}&#xD;
+&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0mf9KOpEeyBecvvC5G1RA" name="fileAuswahl" specification="_s0MQQaOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0mf9aOpEeyBecvvC5G1RA" name="text" type="_szxZgaOpEeyBecvvC5G1RA"/>
+        <language>java</language>
+        <body>JFileChooser chooser = new JFileChooser();&#xD;
+		chooser.setCurrentDirectory(verzeichnis);&#xD;
+		int retrival = chooser.showSaveDialog(null);&#xD;
+		&#xD;
+		if (retrival == JFileChooser.APPROVE_OPTION) {&#xD;
+			File file = chooser.getSelectedFile();&#xD;
+			&#xD;
+			if (!file.getName().toLowerCase().endsWith(&quot;.dst&quot;)) {&#xD;
+		        file = new File(file.getParentFile(), file.getName() + &quot;.dst&quot;);&#xD;
+		      }&#xD;
+	        try {&#xD;
+&#xD;
+				// append or overwrite the file&#xD;
+				boolean append = false;&#xD;
+&#xD;
+				FileChannel channel = extracted(file, append).getChannel();&#xD;
+				// Flips this buffer. The limit is set to the current position and then&#xD;
+				// the position is set to zero. If the mark is defined then it is discarded.&#xD;
+				text.flip();&#xD;
+&#xD;
+				// Writes a sequence of bytes to this channel from the given buffer.&#xD;
+				channel.write(text);&#xD;
+&#xD;
+				// close the channel&#xD;
+				channel.close();&#xD;
+&#xD;
+	            &#xD;
+	            &#xD;
+	        } catch (Exception ex) {&#xD;
+	            ex.printStackTrace();&#xD;
+	        }&#xD;
+	    }&#xD;
+		//Um beim nächsten Speichern im selben Verzeichnis zu starten&#xD;
+		verzeichnis = chooser.getCurrentDirectory();&#xD;
+		&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0nHAKOpEeyBecvvC5G1RA" name="extracted" specification="_s0MQQ6OpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0nHAaOpEeyBecvvC5G1RA" name="file" type="_sz2SAKOpEeyBecvvC5G1RA"/>
+        <ownedParameter xmi:id="_s0nHAqOpEeyBecvvC5G1RA" name="append">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_s0nHA6OpEeyBecvvC5G1RA" type="_sz4HMaOpEeyBecvvC5G1RA" direction="return"/>
+        <language>java</language>
+        <body>return new FileOutputStream(file, append);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0nHBKOpEeyBecvvC5G1RA" name="dstDatei" specification="_s0NeYKOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0nHBaOpEeyBecvvC5G1RA" name="text" type="_szxZgaOpEeyBecvvC5G1RA"/>
+        <language>java</language>
+        <body>String ausgabe;&#xD;
+		ByteBuffer buffer = ByteBuffer.allocate(10000);&#xD;
+&#xD;
+		// Header&#xD;
+		char space = 0x20;&#xD;
+		char charakter = 0xF3;&#xD;
+		char end1 = 0x00;&#xD;
+		char end2 = 0x0D;&#xD;
+		ausgabe = &quot;LA:turtlestitch&quot; + space + space + space + end1 + end2;&#xD;
+		ausgabe += &quot;ST:3&quot; + space + space + space + space + space + space + end2;// TODO noch automatisiern&#xD;
+		ausgabe += &quot;CO:1&quot; + space + space + end2;&#xD;
+		ausgabe += &quot;+X:100&quot;  + space + space + end2;// TODO noch automatisieren&#xD;
+		ausgabe += &quot;-X:0&quot; + space + space + space + space + end2;// TODO noch automatisiern&#xD;
+		ausgabe += &quot;+Y:0&quot; + space + space + space + space + end2;// TODO noch automatisiern&#xD;
+		ausgabe += &quot;-Y:0&quot; + space + space + space + space + end2; // TODO noch automatisiern&#xD;
+		ausgabe += &quot;AX:0&quot; + space + space + space + space + space + end2;&#xD;
+		ausgabe += &quot;AY:0&quot; + space + space + space + space + space + end2;&#xD;
+		ausgabe += &quot;MX:0&quot; + space + space + space + space + space + end2;&#xD;
+		ausgabe += &quot;MY:0&quot; + space + space + space + space + space + end2;&#xD;
+		ausgabe += &quot;PD:******&quot; + end2;&#xD;
+		char headerEnd = 0x1a;&#xD;
+		ausgabe += &quot;&quot; + headerEnd + end1 + end1 + end1;&#xD;
+&#xD;
+		for (int i = 0; i &lt; 384; i++) {&#xD;
+			ausgabe += space;&#xD;
+		}&#xD;
+&#xD;
+		byte[] bytes = ausgabe.getBytes();&#xD;
+		buffer.put(bytes);&#xD;
+		&#xD;
+		text.flip();&#xD;
+		byte[] textBytes = text.array();&#xD;
+		buffer.put(textBytes);&#xD;
+		&#xD;
+		&#xD;
+&#xD;
+		// testausgabe&#xD;
+		// ausgabe += &quot;&quot; + end1 + end1 + (char) 0x03 + (char) 0x09 + (char) 0x04 +&#xD;
+		// (char) 0x07;&#xD;
+&#xD;
+		// ende&#xD;
+		&#xD;
+		ausgabe = &quot;&quot; + (char) end1 + (char) end1 + (char) charakter;&#xD;
+		bytes = ausgabe.getBytes();&#xD;
+		buffer.put(bytes);&#xD;
+&#xD;
+		//standardFileSave(buffer);&#xD;
+		fileAuswahl(buffer);&#xD;
+&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_s0LpMKOpEeyBecvvC5G1RA" name="standardFileSave" visibility="private" isStatic="true" method="_s0mf8qOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0MQQKOpEeyBecvvC5G1RA" name="text" type="_szxZgaOpEeyBecvvC5G1RA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_s0MQQaOpEeyBecvvC5G1RA" name="fileAuswahl" visibility="private" isStatic="true" method="_s0mf9KOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0MQQqOpEeyBecvvC5G1RA" name="text" type="_szxZgaOpEeyBecvvC5G1RA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_s0MQQ6OpEeyBecvvC5G1RA" name="extracted" visibility="private" isStatic="true" method="_s0nHAKOpEeyBecvvC5G1RA" raisedException="_sz3gIaOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0MQRKOpEeyBecvvC5G1RA" name="file" type="_sz2SAKOpEeyBecvvC5G1RA"/>
+        <ownedParameter xmi:id="_s0M3UKOpEeyBecvvC5G1RA" name="append">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_s0M3UaOpEeyBecvvC5G1RA" type="_sz4HMaOpEeyBecvvC5G1RA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_s0NeYKOpEeyBecvvC5G1RA" name="dstDatei" isStatic="true" method="_s0nHBKOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0NeYaOpEeyBecvvC5G1RA" name="text" type="_szxZgaOpEeyBecvvC5G1RA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_sxtkAKOpEeyBecvvC5G1RA" name="Test">
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s0nHBqOpEeyBecvvC5G1RA" name="main" specification="_sxuLEKOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_s0nHB6OpEeyBecvvC5G1RA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s0nHCKOpEeyBecvvC5G1RA" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>// TODO Auto-generated method stub&#xD;
+		&#xD;
+		CinderellaStitchPlugin test = new CinderellaStitchPlugin();&#xD;
+		&#xD;
+		//Double[] testArray1 = {2d,5d}; &#xD;
+		//Double[] testArray2 = {2d,4d};&#xD;
+		&#xD;
+		//ArrayList&lt;Double[]> testArrayList = new ArrayList&lt;Double[]>();&#xD;
+		//testArrayList.add(testArray1);&#xD;
+		//testArrayList.add(testArray2);&#xD;
+		&#xD;
+		&#xD;
+		//String ausgabe = test.getScreenbound(testArrayList);&#xD;
+		//System.out.println(ausgabe);&#xD;
+		&#xD;
+		ArrayList&lt;String[]> testArrayList2 = new ArrayList&lt;String[]>();&#xD;
+		&#xD;
+		&#xD;
+&#xD;
+		String[] testArray6 = {&quot;F&quot;,&quot;2&quot;,&quot;1&quot;}; &#xD;
+		String[] testArray5 = {&quot;E&quot;,&quot;13&quot;,&quot;15&quot;};&#xD;
+		String[] testArray4 = {&quot;D&quot;,&quot;21&quot;,&quot;7&quot;}; &#xD;
+		String[] testArray3 = {&quot;M&quot;,&quot;15.8&quot;,&quot;-3.28&quot;};&#xD;
+		String[] testArray2 = {&quot;O&quot;,&quot;16.28&quot;,&quot;9.29&quot;}; &#xD;
+		String[] testArray1 = {&quot;L&quot;,&quot;1.58&quot;,&quot;10.19&quot;};&#xD;
+		testArrayList2.add(testArray1);&#xD;
+		testArrayList2.add(testArray2);&#xD;
+		testArrayList2.add(testArray3);&#xD;
+		testArrayList2.add(testArray4);&#xD;
+		testArrayList2.add(testArray5);&#xD;
+		testArrayList2.add(testArray6);&#xD;
+		test.getPoints(testArrayList2);&#xD;
+		&#xD;
+		System.out.println(test.punkteListe);&#xD;
+		for (Point s : test.punkteListe) {&#xD;
+			System.out.println(s.getName());&#xD;
+		}&#xD;
+		&#xD;
+		ArrayList&lt;String[]> testArrayList3 = new ArrayList&lt;String[]>();&#xD;
+		String[] testArray7 = {&quot;h&quot;,&quot;Strecke(F;E)&quot;};&#xD;
+		String[] testArray8 = {&quot;d&quot;,&quot;Strecke(E;D)&quot;};&#xD;
+		String[] testArray9 = {&quot;e&quot;,&quot;Strecke(D;F)&quot;};&#xD;
+		testArrayList3.add(testArray7);&#xD;
+		testArrayList3.add(testArray8);&#xD;
+		testArrayList3.add(testArray9);&#xD;
+		test.getSegments(testArrayList3);&#xD;
+		&#xD;
+		&#xD;
+		ArrayList&lt;String[]> testArrayList4 = new ArrayList&lt;String[]>();&#xD;
+		//String[] testArray10 = {&quot;C&quot;,&quot;[0,0]&quot;,&quot;5&quot;};&#xD;
+		//String[] testArray11 = {&quot;C0&quot;,&quot;[3.52,3.31]&quot;,&quot;1.3&quot;};&#xD;
+		//String[] testArray12 = {&quot;C1&quot;,&quot;[5.35,0.96]&quot;,&quot;1.58&quot;};&#xD;
+		&#xD;
+		//testArrayList4.add(testArray11);&#xD;
+		//testArrayList4.add(testArray12);&#xD;
+		&#xD;
+		test.getCircles(testArrayList4); &#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		System.out.println(test.segementListe);&#xD;
+		&#xD;
+		test.startProgrammAusgabe();&#xD;
+		&#xD;
+		&#xD;
+		byte[] jumpTest1 = EndcodeTajimaStitch.encodeDST(0, 0, false);&#xD;
+		byte[] jumpTest2 = EndcodeTajimaStitch.encodeDST(20, 0, false);&#xD;
+		byte[] jumpTest3 = EndcodeTajimaStitch.encodeDST(20, 0, true);&#xD;
+		byte[] jumpTest4 = EndcodeTajimaStitch.encodeDST(0, 0, false);&#xD;
+		byte[] jumpTest5 = EndcodeTajimaStitch.encodeDST(20, 0, false);&#xD;
+		byte[] jumptTest = ByteBuffer.allocate(15).put(jumpTest1).put(jumpTest2).put(jumpTest3).put(jumpTest4).put(jumpTest5).array();&#xD;
+		ByteBuffer test5 = ByteBuffer.wrap(jumptTest);&#xD;
+		&#xD;
+		//DateiAusgabe.dstDatei(test5);&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_sxuLEKOpEeyBecvvC5G1RA" name="main" isStatic="true" method="_s0nHBqOpEeyBecvvC5G1RA">
+        <ownedParameter xmi:id="_sxuyIKOpEeyBecvvC5G1RA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sxuyIaOpEeyBecvvC5G1RA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_s0xfEKOpEeyBecvvC5G1RA" name="" memberEnd="_s0xfEaOpEeyBecvvC5G1RA _s0TlAaOpEeyBecvvC5G1RA">
+      <ownedEnd xmi:id="_s0xfEaOpEeyBecvvC5G1RA" name="" type="_sxYz4KOpEeyBecvvC5G1RA" association="_s0xfEKOpEeyBecvvC5G1RA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_s0yGIaOpEeyBecvvC5G1RA" name="" memberEnd="_s0yGIqOpEeyBecvvC5G1RA _s0UzIaOpEeyBecvvC5G1RA">
+      <ownedEnd xmi:id="_s0yGIqOpEeyBecvvC5G1RA" name="" type="_sxYz4KOpEeyBecvvC5G1RA" association="_s0yGIaOpEeyBecvvC5G1RA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_s0ytMaOpEeyBecvvC5G1RA" name="" memberEnd="_s0ytMqOpEeyBecvvC5G1RA _s0WBQaOpEeyBecvvC5G1RA">
+      <ownedEnd xmi:id="_s0ytMqOpEeyBecvvC5G1RA" name="" type="_sxYz4KOpEeyBecvvC5G1RA" association="_s0ytMaOpEeyBecvvC5G1RA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_s0zUQaOpEeyBecvvC5G1RA" name="" memberEnd="_s0zUQqOpEeyBecvvC5G1RA _s0X2cKOpEeyBecvvC5G1RA">
+      <ownedEnd xmi:id="_s0zUQqOpEeyBecvvC5G1RA" name="" type="_sxp5oKOpEeyBecvvC5G1RA" association="_s0zUQaOpEeyBecvvC5G1RA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GNlhcKOqEeyBecvvC5G1RA" client="_sxYz4KOpEeyBecvvC5G1RA" supplier="_sxp5oKOpEeyBecvvC5G1RA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_UqOxMKOqEeyBecvvC5G1RA" client="_sxYz4KOpEeyBecvvC5G1RA" supplier="_syEwYKOpEeyBecvvC5G1RA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_XFZzIKOqEeyBecvvC5G1RA" client="_sxYz4KOpEeyBecvvC5G1RA" supplier="_sx_Q0KOpEeyBecvvC5G1RA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_X3c7IKOqEeyBecvvC5G1RA" client="_sxYz4KOpEeyBecvvC5G1RA" supplier="_sxvZMKOpEeyBecvvC5G1RA"/>
+    <profileApplication xmi:id="_skau4KOpEeyBecvvC5G1RA">
+      <eAnnotations xmi:id="_skdLIKOpEeyBecvvC5G1RA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+    <profileApplication xmi:id="_O8Ge0KOsEeyBecvvC5G1RA">
+      <eAnnotations xmi:id="_O8HF4KOsEeyBecvvC5G1RA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PHP_PROFILES/PHP.profile.uml#PHPProfile-Annotation-PHPProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://PHP_PROFILES/PHP.profile.uml#PHPProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_skfnYKOpEeyBecvvC5G1RA" base_Package="_se25cKOpEeyBecvvC5G1RA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sxceQaOpEeyBecvvC5G1RA" base_Element="_sxbQIKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Annotations xmi:id="_sxdsYKOpEeyBecvvC5G1RA" base_Element="_sxbQIKOpEeyBecvvC5G1RA">
+    <annotations xmi:id="_sxdsYaOpEeyBecvvC5G1RA" name="CindyScript">
+      <annotationParameters xmi:id="_sxeTcKOpEeyBecvvC5G1RA" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_s0tNoKOpEeyBecvvC5G1RA" value="&quot;getName&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_sxh90KOpEeyBecvvC5G1RA" base_Element="_sxgvsKOpEeyBecvvC5G1RA">
+    <annotations xmi:id="_sxh90aOpEeyBecvvC5G1RA" name="CindyScript">
+      <annotationParameters xmi:id="_sxh90qOpEeyBecvvC5G1RA" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_s0tNoaOpEeyBecvvC5G1RA" value="&quot;startProgrammAusgabe&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sxjzAKOpEeyBecvvC5G1RA" base_Element="_sxik4KOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Annotations xmi:id="_sxjzAaOpEeyBecvvC5G1RA" base_Element="_sxik4KOpEeyBecvvC5G1RA">
+    <annotations xmi:id="_sxjzAqOpEeyBecvvC5G1RA" name="CindyScript">
+      <annotationParameters xmi:id="_sxjzA6OpEeyBecvvC5G1RA" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_s0t0tKOpEeyBecvvC5G1RA" value="&quot;loadProgramm&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Array xmi:id="_sx7mcKOpEeyBecvvC5G1RA" base_Element="_sx6_YKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Array xmi:id="_sx80kqOpEeyBecvvC5G1RA" base_Element="_sx8NgKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_szxZgKOpEeyBecvvC5G1RA" base_Element="_szwLYKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_szyAkKOpEeyBecvvC5G1RA" base_Element="_szxZgaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_szzOsKOpEeyBecvvC5G1RA" base_Element="_szynoKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_szz1wKOpEeyBecvvC5G1RA" base_Element="_szzOsaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_sz3gIKOpEeyBecvvC5G1RA" base_Element="_sz2SAKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_sz4HMKOpEeyBecvvC5G1RA" base_Element="_sz3gIaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_sz4HMqOpEeyBecvvC5G1RA" base_Element="_sz4HMaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_sz4uQaOpEeyBecvvC5G1RA" base_Element="_sz4uQKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_sz5VUKOpEeyBecvvC5G1RA" base_Element="_sz4uQqOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_sz58YKOpEeyBecvvC5G1RA" base_Element="_sz5VUaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_sz6jcKOpEeyBecvvC5G1RA" base_Element="_sz58YaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_sz6jcqOpEeyBecvvC5G1RA" base_Element="_sz6jcaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_sz7KgaOpEeyBecvvC5G1RA" base_Element="_sz7KgKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_s0FikKOpEeyBecvvC5G1RA" base_Element="_s0E7gaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_s0GwsKOpEeyBecvvC5G1RA" base_Element="_s0GJoKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Generics xmi:id="_s0GwsaOpEeyBecvvC5G1RA" genericsValue="Double[]" base_Element="_s0GJoaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Annotations xmi:id="_s0HXwKOpEeyBecvvC5G1RA" base_Element="_s0GJoKOpEeyBecvvC5G1RA">
+    <annotations xmi:id="_s0HXwaOpEeyBecvvC5G1RA" name="CindyScript">
+      <annotationParameters xmi:id="_s0HXwqOpEeyBecvvC5G1RA" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_s0t0sKOpEeyBecvvC5G1RA" value="&quot;getScreenbound&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_s0H-0aOpEeyBecvvC5G1RA" genericsValue="String[]" base_Element="_s0HXxKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Annotations xmi:id="_s0Il4KOpEeyBecvvC5G1RA" base_Element="_s0HXw6OpEeyBecvvC5G1RA">
+    <annotations xmi:id="_s0Il4aOpEeyBecvvC5G1RA" name="CindyScript">
+      <annotationParameters xmi:id="_s0Il4qOpEeyBecvvC5G1RA" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_s0t0saOpEeyBecvvC5G1RA" value="&quot;getPoints&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_s0JM8aOpEeyBecvvC5G1RA" genericsValue="String[]" base_Element="_s0Il5KOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Annotations xmi:id="_s0J0AKOpEeyBecvvC5G1RA" base_Element="_s0Il46OpEeyBecvvC5G1RA">
+    <annotations xmi:id="_s0J0AaOpEeyBecvvC5G1RA" name="CindyScript">
+      <annotationParameters xmi:id="_s0J0AqOpEeyBecvvC5G1RA" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_s0t0sqOpEeyBecvvC5G1RA" value="&quot;getSegments&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_s0KbEaOpEeyBecvvC5G1RA" genericsValue="String[]" base_Element="_s0J0BKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Annotations xmi:id="_s0LCIKOpEeyBecvvC5G1RA" base_Element="_s0J0A6OpEeyBecvvC5G1RA">
+    <annotations xmi:id="_s0LCIaOpEeyBecvvC5G1RA" name="CindyScript">
+      <annotationParameters xmi:id="_s0LCIqOpEeyBecvvC5G1RA" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_s0t0s6OpEeyBecvvC5G1RA" value="&quot;getCircles&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_s0RIwKOpEeyBecvvC5G1RA" base_Element="_s0QhsKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Array xmi:id="_s0Rv0KOpEeyBecvvC5G1RA" base_Element="_s0RIwaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_s0Rv0aOpEeyBecvvC5G1RA" base_Element="_s0RIwaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Array xmi:id="_s0Rv1KOpEeyBecvvC5G1RA" base_Element="_s0Rv0qOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_s0SW4KOpEeyBecvvC5G1RA" base_Element="_s0Rv0qOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Array xmi:id="_s0SW46OpEeyBecvvC5G1RA" base_Element="_s0SW4aOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_s0S98KOpEeyBecvvC5G1RA" base_Element="_s0SW4aOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Array xmi:id="_s0S986OpEeyBecvvC5G1RA" base_Element="_s0S98aOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_s0TlAKOpEeyBecvvC5G1RA" base_Element="_s0S98aOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Generics xmi:id="_s0UMEKOpEeyBecvvC5G1RA" genericsValue="Point" base_Element="_s0TlAaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Generics xmi:id="_s0VaMKOpEeyBecvvC5G1RA" genericsValue="Segment" base_Element="_s0UzIaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Generics xmi:id="_s0WoUKOpEeyBecvvC5G1RA" genericsValue="Circle" base_Element="_s0WBQaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_s0ZroqOpEeyBecvvC5G1RA" base_Element="_s0ZroaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_s0aSsaOpEeyBecvvC5G1RA" base_Element="_s0aSsKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_s0cu8KOpEeyBecvvC5G1RA" base_Element="_s0cH4KOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_s0cu8qOpEeyBecvvC5G1RA" base_Element="_s0cu8aOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_s0yGIKOpEeyBecvvC5G1RA" base_Element="_s0xfEKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_s0ytMKOpEeyBecvvC5G1RA" base_Element="_s0yGIaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_s0zUQKOpEeyBecvvC5G1RA" base_Element="_s0ytMaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_s0zUQ6OpEeyBecvvC5G1RA" base_Element="_s0zUQaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_s0z7UqOpEeyBecvvC5G1RA" base_Element="_s0z7UKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_s00iYKOpEeyBecvvC5G1RA" base_Element="_s0z7U6OpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_s00iY6OpEeyBecvvC5G1RA" base_Element="_s00iYaOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_s01JcKOpEeyBecvvC5G1RA" base_Element="_s00iZKOpEeyBecvvC5G1RA"/>
+  <UMLLabProfile:Reference xmi:id="_s01Jc6OpEeyBecvvC5G1RA" base_Element="_s01JcaOpEeyBecvvC5G1RA"/>
+</xmi:XMI>

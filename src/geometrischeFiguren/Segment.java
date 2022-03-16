@@ -10,6 +10,13 @@ package geometrischeFiguren;
 
 import java.nio.ByteBuffer;
 
+/**
+ * Alle Strecken aus Cinderella sollen durch diese Klasse instaziiert werden.
+ * Deffiniert ist eine Strecke durch Anfangs und Endpunnkt als 'Point'.
+ * 
+ * @author Simon Doubleday
+ *
+ */
 public class Segment {
 
 	Point anfangsPunkt;
@@ -17,6 +24,13 @@ public class Segment {
 
 	String name;
 
+	/**
+	 * Constructor
+	 * 
+	 * @param name         Name der Strecke
+	 * @param anfangsPunkt Punkt als 'Point'
+	 * @param endPunkt     Punkt als 'Point'
+	 */
 	public Segment(String name, Point anfangsPunkt, Point endPunkt) {
 		this.anfangsPunkt = anfangsPunkt;
 		this.endPunkt = endPunkt;
@@ -24,6 +38,7 @@ public class Segment {
 
 	}
 
+	// Getter und Setter
 	public void setAnfangsPunkt(Point anfangsPunkt) {
 		this.anfangsPunkt = anfangsPunkt;
 	}
@@ -64,11 +79,13 @@ public class Segment {
 	 * 
 	 * return (ausgabe); }
 	 */
-	
+
 	/**
+	 * Gibt den Stichcode der Strecke aus.
 	 * 
+	 * @param punktDavor der vorige endpunkt des letzten Objekts
 	 * @param aufloesung in welchem Verhältnis alles ausgegeben wird.
-	 * @return
+	 * @return Stichcode der Strecke mit Zwischenstichen
 	 */
 	public ByteBuffer stitchCode2(Point punktDavor, double aufloesung) {
 
@@ -85,9 +102,6 @@ public class Segment {
 		// groß ist, sonst gibt es zu viele stellen.
 
 		if (punktDavor.equals(this.anfangsPunkt)) {
-
-			stichZaehler += 0;
-		} else {
 			long bildWechselX = (long) anfangsPunkt.x - (long) punktDavor.x;
 			long bildWechselY = (long) anfangsPunkt.y - (long) punktDavor.y;
 
@@ -121,53 +135,46 @@ public class Segment {
 			stichZaehler += 2;
 
 		}
-		
-		//Richtungsvektor 
+
+		// Richtungsvektor
 		long endpunktX = (long) endPunkt.x;
 		long endpunktY = (long) endPunkt.y;
 		long anfangspunktX = (long) anfangsPunkt.x;
 		long anfangspunktY = (long) anfangsPunkt.y;
-		
-		long vekX = (endpunktX-anfangspunktX);
-		long vekY = endpunktY-anfangspunktY;
-		
-		double aktuellerPunktX = anfangspunktX ;
+
+		long vekX = (endpunktX - anfangspunktX);
+		long vekY = endpunktY - anfangspunktY;
+
+		double aktuellerPunktX = anfangspunktX;
 		double aktuellerPunktY = anfangspunktY;
-		
+
 		double davorPunktX = anfangspunktX;
 		double davorPunktY = anfangspunktY;
-		
-		//TODO Zwischnenschritte als Punkte berechnen und dann dazwischen die Vektoren 
-		// Mininimert möglicherwieise etwas die rundungsfehler des Ortsvektors
+
 		// zwischenschritte einzeichnen
 		for (int i = 1; i < anzahlStiche; i++) {
-			
-			double testx = ((i/(double)anzahlStiche) *vekX);
-			double testY =  ((i/(double)anzahlStiche) *vekY);
-			
-			aktuellerPunktX = anfangspunktX + ((i/(double)anzahlStiche) *vekX);
-			aktuellerPunktY = anfangspunktY + ((i/(double)anzahlStiche) *vekY);
 
-			ausgabe.put(EndcodeTajimaStitch.encodeDST((long)aktuellerPunktX-(long)davorPunktX,
-					(long)aktuellerPunktY-(long)davorPunktY));
-			
+			aktuellerPunktX = anfangspunktX + ((i / (double) anzahlStiche) * vekX);
+			aktuellerPunktY = anfangspunktY + ((i / (double) anzahlStiche) * vekY);
+
+			ausgabe.put(EndcodeTajimaStitch.encodeDST((long) aktuellerPunktX - (long) davorPunktX,
+					(long) aktuellerPunktY - (long) davorPunktY));
+
 			davorPunktX = aktuellerPunktX;
 			davorPunktY = aktuellerPunktY;
-			
+
 			stichZaehler += 1;
 		}
-		
+
 		if (anzahlStiche == 0) {
-			ausgabe.put(EndcodeTajimaStitch.encodeDST(vekX,
-					vekY,true));
-			
+			ausgabe.put(EndcodeTajimaStitch.encodeDST(vekX, vekY, true));
+
 			stichZaehler += 1;
 
-			
-			// falls es keine zwischenschritte gab, direkt den Endpunkt einzeichnen	
-		}  else {
-			ausgabe.put(EndcodeTajimaStitch.encodeDST((long)endpunktX-(long)aktuellerPunktX ,
-					(long)endpunktY-(long)aktuellerPunktY));
+			// falls es keine zwischenschritte gab, direkt den Endpunkt einzeichnen
+		} else {
+			ausgabe.put(EndcodeTajimaStitch.encodeDST((long) endpunktX - (long) aktuellerPunktX,
+					(long) endpunktY - (long) aktuellerPunktY));
 			stichZaehler += 1;
 		}
 
@@ -179,12 +186,13 @@ public class Segment {
 		return (ausgabe);
 	}
 
-	
-	
 	/**
+	 * Gibt den Stichcode der Strecke aus. Berechnet aber die zwischen Punkte um
+	 * verschiebung durch Rundung auszugleichen.
 	 * 
+	 * @param punktDavor der vorige endpunkt des letzten Objekts
 	 * @param aufloesung in welchem Verhältnis alles ausgegeben wird.
-	 * @return
+	 * @return Stichcode der Strecke mit Zwischenstichen
 	 */
 	public ByteBuffer stitchCode1(Point punktDavor, double aufloesung) {
 
@@ -201,12 +209,11 @@ public class Segment {
 		// groß ist, sonst gibt es zu viele stellen.
 
 		if (punktDavor.equals(this.anfangsPunkt)) {
-
-			stichZaehler += 0;
-		} else {
 			long bildWechselX = (long) anfangsPunkt.x - (long) punktDavor.x;
 			long bildWechselY = (long) anfangsPunkt.y - (long) punktDavor.y;
 
+			
+			//TODO Zwischenschritte einzeichnen um den TRIM-Command zu umgehen
 			// Bildwechsel zur nächsten Form mithilfe eines oder mehrer Sprungstiche
 			while (bildWechselX > 121 || bildWechselX < -121 || bildWechselY > 121 || bildWechselY < -121) {
 
@@ -237,42 +244,38 @@ public class Segment {
 			stichZaehler += 2;
 
 		}
-		
-		//Richtungsvektor 
+
+		// Richtungsvektor
 		long endpunktX = (long) endPunkt.x;
 		long endpunktY = (long) endPunkt.y;
 		long anfangspunktX = (long) anfangsPunkt.x;
 		long anfangspunktY = (long) anfangsPunkt.y;
-		
-		long vekX = (endpunktX-anfangspunktX);
-		long vekY = (endpunktY-anfangspunktY);
-		
-		long aktuellerPunktX = anfangspunktX ;
+
+		long vekX = (endpunktX - anfangspunktX);
+		long vekY = (endpunktY - anfangspunktY);
+
+		long aktuellerPunktX = anfangspunktX;
 		long aktuellerPunktY = anfangspunktY;
-		
-		//TODO Zwischnenschritte als Punkte berechnen und dann dazwischen die Vektoren 
-		// Mininimert möglicherwieise etwas die rundungsfehler des Ortsvektors
+
+		// Zwischnenschritte als Punkte berechnen und dann dazwischen die Vektoren
+		// Mininimert möglicherweise etwas die rundungsfehler des Ortsvektors
 		// zwischenschritte einzeichnen
 		for (int i = 1; i < anzahlStiche; i++) {
 
-			ausgabe.put(EndcodeTajimaStitch.encodeDST((1/anzahlStiche) *vekX,
-					(1/anzahlStiche) *vekY));
-			aktuellerPunktX = (long)(anfangspunktX + ((double)(i/anzahlStiche) *vekX));
-			aktuellerPunktY = (long)(anfangspunktY + ((double)(i/anzahlStiche) *vekY));
+			ausgabe.put(EndcodeTajimaStitch.encodeDST((1 / anzahlStiche) * vekX, (1 / anzahlStiche) * vekY));
+			aktuellerPunktX = (long) (anfangspunktX + ((double) (i / anzahlStiche) * vekX));
+			aktuellerPunktY = (long) (anfangspunktY + ((double) (i / anzahlStiche) * vekY));
 			stichZaehler += 1;
 		}
-		
+
 		if (anzahlStiche == 0) {
-			ausgabe.put(EndcodeTajimaStitch.encodeDST(vekX,
-					vekY,true));
-			
+			ausgabe.put(EndcodeTajimaStitch.encodeDST(vekX, vekY, true));
+
 			stichZaehler += 1;
 
-			
-			// falls es keine zwischenschritte gab, direkt den Endpunkt einzeichnen	
-		}  else {
-			ausgabe.put(EndcodeTajimaStitch.encodeDST(endpunktX-aktuellerPunktX ,
-					endpunktY-aktuellerPunktY));
+			// falls es keine zwischenschritte gab, direkt den Endpunkt einzeichnen
+		} else {
+			ausgabe.put(EndcodeTajimaStitch.encodeDST(endpunktX - aktuellerPunktX, endpunktY - aktuellerPunktY));
 			stichZaehler += 1;
 		}
 
@@ -284,16 +287,21 @@ public class Segment {
 		return (ausgabe);
 	}
 
-	
-	
 	/**
+	 * Berechnet die Länge der Strecke
 	 * 
-	 * @return
+	 * @return laenge der Strecke
 	 */
 	private double laenge() {
-		return Math.sqrt((square(this.endPunkt.x - this.anfangsPunkt.x) + square(this.endPunkt.y - this.anfangsPunkt.y)));
+		return Math
+				.sqrt((square(this.endPunkt.x - this.anfangsPunkt.x) + square(this.endPunkt.y - this.anfangsPunkt.y)));
 	}
 
+	/**
+	 * 
+	 * @param zahl in double
+	 * @return quadratzahl der eingabe zahl
+	 */
 	private double square(double zahl) {
 		return zahl * zahl;
 	}

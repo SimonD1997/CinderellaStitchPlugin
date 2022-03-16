@@ -9,6 +9,12 @@ package geometrischeFiguren;
 
 import java.nio.ByteBuffer;
 
+/**
+ * Alle Kreise aus Cinderella sollen durch diese Klasse instaziiert werden. 
+ * Deffiniert ist eine Kreis durch Mittelpunkt als 'Point' und den radius.
+ * @author Simon Doubleday
+ *
+ */
 public class Circle {
 
 	String name;
@@ -18,6 +24,12 @@ public class Circle {
 	Point anfangsPunkt;
 	Point endPunkt;
 
+	/**
+	 * Constructor
+	 * @param name
+	 * @param mittelpunkt
+	 * @param radius
+	 */
 	public Circle(String name, double[] mittelpunkt, double radius) {
 		this.radius = radius;
 		this.mittelpunkt.setName(name+ "Mittelpunkt");
@@ -28,6 +40,8 @@ public class Circle {
 
 	}
 
+	//Getter und Setter
+	
 	public void setRadius(double radius) {
 		this.radius = radius;
 	}
@@ -60,14 +74,22 @@ public class Circle {
 		return this.name;
 	}
 
+	
+	/**
+	 * Berechnet anhand des Umfangs des Kreises einen bestmöglichen Stichcode mit möglichst vielen Stichen. 
+	 * @param punktDavor der vorige endpunkt des letzten Objekts
+	 * @param aufloesung mit welchem Masstab Stickeinheiten und Koordinaten in Cinderella umgerechnet werden.
+	 * @return Stichcode des Kreises
+	 */
 	public ByteBuffer stitchCode(Point punktDavor, double aufloesung) {
 
 		// Berechnen von zischenstichen. 5-7 mm 2,5 - 3.0 mm
 		// brother max 5mm
 		// best 1,5mm
-		// double aufloesung = 1;
+		// aufloesung = 1
 		int abstaende = (int)(10*aufloesung); // umgerechnet in nadelbewegungen mit 0,1mm
 
+		//Stiche abhängig von der minimalen Stichlänge die festgelegt wird
 		int anzahlStiche = (int) (umfang() / abstaende); // aufgerundet, da sonst ein stich unter minimalabstand fällt
 		int stichZaehler = 0;
 
@@ -99,6 +121,7 @@ public class Circle {
 			
 		}
 
+		//Erster Einstich als Begin des nächsten/ersten Stiches
 		ausgabe.put(EndcodeTajimaStitch.encodeDST(bildWechselX, bildWechselY, true));
 
 		ausgabe.put(EndcodeTajimaStitch.encodeDST(0, 0));
@@ -112,8 +135,10 @@ public class Circle {
 		// zwischenschritte einzeichnen
 		for (int i = 1; i < anzahlStiche; i++) {
 
+			//Punkte abhängig von der Anzahl von Stichen
 			naechsterPunkt = kreisGleichung(((2*Math.PI) / anzahlStiche) * i);
 
+			//Vektor als Stich zwischen den Punkten
 			ausgabe.put(EndcodeTajimaStitch.encodeDST((long) naechsterPunkt.x - (long) aktuellerPunkt.x,
 					(long) naechsterPunkt.y - (long) aktuellerPunkt.y));
 			stichZaehler += 1;
@@ -125,26 +150,23 @@ public class Circle {
 
 		// falls es keine zwischenschritte gab, direkt den Endpunkt einzeichnen
 		if (anzahlStiche == 1) {
-
-		} else {
-
 			ausgabe.put(EndcodeTajimaStitch.encodeDST((int) anfangsPunkt.x - (int) aktuellerPunkt.x,
 					(long) anfangsPunkt.y - (long) aktuellerPunkt.y));
 			stichZaehler += 1;
-
-		}
-
-		ByteBuffer ausgabe2 = ByteBuffer.allocate((stichZaehler * 3)); // TODO noch schauen, das der Buffer nicht zu
+		} 
+		
+		//Buffer ausgaben, der nur die notwendigen Stellen enthält um eine falsche Ausgabe zu verhindern.
+		ByteBuffer ausgabe2 = ByteBuffer.allocate((stichZaehler * 3)); 
 		ausgabe.flip();
-		ausgabe2.put(ausgabe); // groß ist, sonst gibt es zu viele stellen.
+		ausgabe2.put(ausgabe); 
 
 		return (ausgabe);
 	}
 
 	/**
-	 * 
-	 * @param neuX
-	 * @return
+	 * Gibt einen Punkt auf dem Kreis aus.
+	 * @param winkel Winkel auf dem Kreis
+	 * @return Punkt als 'Point' auf dem Kreis
 	 */
 	private Point kreisGleichung(double winkel) {
 		double neuX = radius * Math.cos(winkel) + mittelpunkt.getX();
@@ -156,7 +178,7 @@ public class Circle {
 
 	/**
 	 * 
-	 * @return
+	 * @return Umfang des Kreises
 	 */
 	private double umfang() {
 		return 2 * radius * Math.PI;

@@ -9,9 +9,13 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 
 import geometrischeFiguren.EndcodeTajimaStitch;
-import geometrischeFiguren.EndcodeTajimaStitch2;
 import geometrischeFiguren.Point;
 
+/**
+ * Testklasse zum Debuggen
+ * @author Simon Doubleday
+ *
+ */
 public class Test {
 
 	public static void main(String[] args) {
@@ -88,7 +92,7 @@ public class Test {
 		byte[] jumptTest = ByteBuffer.allocate(15).put(jumpTest1).put(jumpTest2).put(jumpTest3).put(jumpTest4).put(jumpTest5).array();
 		ByteBuffer test5 = ByteBuffer.wrap(jumptTest);
 		
-		//DateiAusgabe.dstDatei(test5);
+		DateiAusgabe.dstDatei(test5);
 		
 		
 		

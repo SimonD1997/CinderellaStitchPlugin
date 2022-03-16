@@ -17,13 +17,24 @@ import geometrischeFiguren.EndcodeTajimaStitch;
 import de.cinderella.api.cs.CindyScript;
 import de.cinderella.api.cs.CindyScriptPlugin;
 
+/**
+ * Hauptklasse wird von Cinderella aufgrufen und verknüpft Cinderella mit Plugin
+ * @author Simon Doubleday
+ *
+ */
 public class CinderellaStitchPlugin extends CindyScriptPlugin {
 
+	/**
+	 * @return Name des Plugins
+	 */
 	@CindyScript("getName")
 	public String getName() {
 		return "CinderellaStitchPlugin";
 	}
 
+	/**
+	 * @return Name des Autors
+	 */
 	public String getAuthor() {
 		return "Simon Doubleday";
 	}
@@ -32,7 +43,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 
 	private double aufloesung = 1;
 
-	// Größe der dargestellten Fläche in Cinderella
+	// Groesse der dargestellten Flaeche in Cinderella
 	private Double[] ecke1;
 	private Double[] ecke2;
 	private Double[] ecke3;
@@ -43,6 +54,9 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	ArrayList<Segment> segementListe = new ArrayList<>();
 	ArrayList<Circle> circleListe = new ArrayList<>();
 
+	/**
+	 * Hauptprogramm: Ruft fuer jede geometrische Konstruktion den Stichcode ab und gibt ihn durch die Methode dst.Datei in Klasse Dateiausgabe aus
+	 */
 	@CindyScript("startProgrammAusgabe")
 	public void startProgrammAusgabe() {
 
@@ -62,6 +76,8 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 		/*
 		 * for (Point s : punkteListe) { ausgabe += s.getName(); ausgabe += "\n"; }
 		 */
+		
+		//ruft den Stichcode von allem Strecken ab
 		for (Segment s : segementListe) {
 
 			// byte[] test2 = s.stitchCode().array();
@@ -74,6 +90,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 			// test.put(test3);
 		}
 
+		//ruft den Stichcode von allen Kreisen ab
 		for (Circle c : circleListe) {
 
 			// byte[] test2 = s.stitchCode().array();
@@ -86,6 +103,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 			// test.put(test3);
 		}
 
+		//Ausgabe des Stichcodes. flip() und Uebertragen in anderen ByteBuffer; um Nullen am Ende der Datei zu verhindern.
 		ByteBuffer ausgabeOhneNullen = ByteBuffer.allocate(ausgabe.position());
 		ausgabe.flip();
 		ausgabeOhneNullen.put(ausgabe);
@@ -97,8 +115,8 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	}
 
 	/**
-	 * 
-	 * @param forms
+	 * Speichert die vier Ecken des sichtbaren Bereichs in Cinderella 
+	 * @param forms ArrayList mit den vier Ecken des sichtbaren Bereichs in Cinderella
 	 */
 	@CindyScript("getScreenbound")
 	public void getScreenbound(ArrayList<Double[]> forms) {
@@ -109,14 +127,14 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	}
 
 	/**
-	 * 
-	 * @param forms
+	 * Fuegt alle Punkte aus Cinderella als 'Point' einer Liste hinzu. 
+	 * @param forms Punkte in Cinderella als ArrayList  
 	 */
 	@CindyScript("getPoints")
 	public void getPoints(ArrayList<String[]> forms) {
 		// Listen werden einmal angelegt, wenn PLugin geladen wird.
-		//Deswegen jedes mal Liste löschen wenn Methode aufgerrufen wird. 
-		// sonst füllt sich Liste immer weiter...
+		//Deswegen jedes mal Liste lÃ¶schen wenn Methode aufgerrufen wird. 
+		// sonst fÃ¼llt sich Liste immer weiter...
 		punkteListe.clear();  
 		
 		for (String[] arrayList : forms) {
@@ -139,11 +157,15 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	}
 
 	/**
-	 * 
-	 * @param forms
+	 * Fuegt alle Strecken aus Cinderella als 'Segement' einer Liste hinzu. 
+	 * @param forms Strecken in Cinderella als ArrayList  
 	 */
 	@CindyScript("getSegments")
 	public void getSegments(ArrayList<String[]> forms) {
+		// Listen werden einmal angelegt, wenn PLugin geladen wird.
+		//Deswegen jedes mal Liste loeschen, wenn Methode aufgerrufen wird. 
+		// sonst faellt sich Liste immer weiter...
+		
 		segementListe.clear();
 		for (String[] arrayList : forms) {
 
@@ -160,11 +182,11 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 			Point anfangsPunkt = null;
 			int iterator = 0;
 			// Lineare Suche nach den Anfangs und Endpunkten der Strecke (ander einfache
-			// Suchen nicht möglich weil Liste nicht sortiert ist)
+			// Suchen nicht moeglich weil Liste nicht sortiert ist)
 
 			/*
-			 * Möglicherweise Listesortieren lassen und dann mit Binärer suche drüber Testen
-			 * ob des Klappt. Collections.sort(liste); Collections.binarySearch(list, key);
+			 * Moeglicherweise Listesortieren lassen und dann mit Binaerer suche drueber 
+			 * Testen ob des Klappt. Collections.sort(liste); Collections.binarySearch(list, key);
 			 */
 
 			while (iterator < punkteListe.size() && anfangsPunkt == null) {
@@ -180,7 +202,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 			Point endPunkt = null;
 			iterator = 0;
 			// Lineare Suche nach den Anfangs und Endpunkte der Strecke (ander einfache
-			// Suchen nicht möglich weil Liste nicht sortiert ist)
+			// Suchen nicht mÃ¶glich weil Liste nicht sortiert ist)
 			while (iterator < punkteListe.size() && endPunkt == null) {
 
 				if (punkteListe.get(iterator).getName().compareTo(endPunktString) == 0) {
@@ -199,11 +221,14 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	}
 
 	/**
-	 * 
-	 * @param forms
+	 * Fuegt alle Kreise aus Cinderella als 'Circle' einer Liste hinzu. 
+	 * @param forms Kreise in Cinderella als ArrayList  
 	 */
 	@CindyScript("getCircles")
 	public void getCircles(ArrayList<String[]> forms) {
+		// Listen werden einmal angelegt, wenn PLugin geladen wird.
+		//Deswegen jedes mal Liste lÃ¶schen wenn Methode aufgerrufen wird. 
+		// sonst fuellt sich Liste immer weiter...
 		circleListe.clear();
 		for (String[] arrayList : forms) {
 
@@ -223,8 +248,8 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	}
 
 	/**
-	 * Möglicherweise alles notwendige Programm mithilfe des
-	 * "import(loadProgramm())" in Cinderella laden lassen. erhöht Komfort für
+	 * Moeglicherweise alles notwendige Programm mithilfe des
+	 * "import(loadProgramm())" in Cinderella laden lassen. erhoeht Komfort fuer
 	 * Anwender.
 	 * TODO NOCH UNGETESTET
 	 * @return
@@ -271,7 +296,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 				+ "getCircles(circ2); //getter im Plugin\n"
 				+ "\n"
 				+ "startProgrammAusgabe();\n"
-				+ "clear(); //alle Variablen löschen\n"
+				+ "clear(); //alle Variablen lÃ¶schen\n"
 				+ ");\n"
 				+ "\n"
 				+ "programmAufruf();");

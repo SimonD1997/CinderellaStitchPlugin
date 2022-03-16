@@ -7,6 +7,12 @@
 */
 package geometrischeFiguren;
 
+/**
+ * Alle Punkte aus Cinderella sollen durch diese Klasse instaziiert werden. 
+ * Definiert ist ein Punkt durch x und y Koordinate.
+ * @author Simon Doubleday
+ *
+ */
 public class Point  {
 	
 	double x;
@@ -14,12 +20,19 @@ public class Point  {
 	
 	String name; 
 	
+	/**
+	 * Constructor
+	 * @param name Name des Punkts
+	 * @param x Koordinate als double
+	 * @param y Koordinate als double
+	 */
 	public Point(String name, double x, double y) {
 		this.name = name;
 		this.x = x;
 		this.y = y;
 	}
 	
+	//Getter und Setter
 	public void setX(double x) {
 		this.x = x;
 	}

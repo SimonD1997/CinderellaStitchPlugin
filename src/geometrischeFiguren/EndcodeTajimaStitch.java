@@ -10,16 +10,38 @@
 
 package geometrischeFiguren;
 
+/**
+ * Berechnet den Stichcode anhand von x und y Bewegungen. Dürfen maximal
+ * zwischen -121 und +121 liegen
+ * 
+ * @author Simon Doubleday
+ *
+ */
 public class EndcodeTajimaStitch {
-	
-	
+
+	/**
+	 * Berechnet einen 'normalen' Stich
+	 * 
+	 * @param dx Bewegung in x-Richtung zwischen -121 und + 121
+	 * @param dy Bewegung in y-Richtung zwischen -121 und + 121
+	 * @return Stitch Code in 3 Bytes gespeichert in einem ByteArray
+	 */
 	public static byte[] encodeDST(long dx, long dy) {
 		return encodeDST(dx, dy, false);
 	}
 
+	/**
+	 * Berechnet einen Stich. Es kann zwischen Jump Stich und 'normalem' Stich
+	 * gewählt werden.
+	 * 
+	 * @param dx   Bewegung in x-Richtung zwischen -121 und + 121
+	 * @param dy   Bewegung in y-Richtung zwischen -121 und + 121
+	 * @param jump true falls ein Jump Stitch ausgegeben werden soll
+	 * @return Stitch Code in 3 Bytes gespeichert in einem ByteArray
+	 */
 	public static byte[] encodeDST(long dx, long dy, boolean jump) {
 
-		byte[] byteArray = {0,0,0};
+		byte[] byteArray = { 0, 0, 0 };
 		byte b1 = 0;
 		byte b2 = 0;
 		byte b3 = 0;
@@ -105,36 +127,24 @@ public class EndcodeTajimaStitch {
 			dy += 1;
 		}
 
-		
-		
-		
-		//b3 += 0x83;
-		
-		//char b4 = 0x89;
-		//b4 += b3;
 		byteArray[0] = b1;
 		byteArray[1] = b2;
 		byteArray[2] = b3;
-		
-		//String s = "" + b1;
-		//s += b2;
-		
+
+		// Verändert den Bit der den Jump Stitch ansagt
 		if (jump == true) {
-			byteArray[2] += (byte)0b10000011;
-			//b3 += 0x83;
-			//s += b3;
-			
-		}else {
-			byteArray[2] += (byte)0b00000011;
-			//b3 += 0x03;
-			//s += b3;
+			byteArray[2] += (byte) 0b10000011;
+			// b3 += 0x83;
+			// s += b3;
+
+		} else {
+			byteArray[2] += (byte) 0b00000011;
+			// b3 += 0x03;
+			// s += b3;
 		}
-		
-		
-		
+
 		return byteArray;
 
 	}
-	
-	
+
 }

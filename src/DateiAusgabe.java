@@ -1,4 +1,5 @@
-/* ------------------------------------------------------------------
+/* 
+# ------------------------------------------------------------------
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public License
 # License as published by the Free Software Foundation; either
@@ -18,11 +19,21 @@ import java.nio.charset.Charset;
 import javax.swing.JFileChooser;
 
 
-
+/**
+ * Gibt eine Stitchdatei im DST-Format aus. 
+ * Fügt Header und Stitchcode zusammen und ruft ein Dateiauswahlmenü aus. 
+ * @author Simon Doubleday
+ *
+ */
 public class DateiAusgabe {
 	
+	//Verzeichnispfad
 	private static File verzeichnis;
 
+	/**
+	 * Gibt den die Stichbefehle in eine Datei aus. 
+	 * @param text Stichcode als Bytebuffer
+	 */
 	private static void standardFileSave(ByteBuffer text) {
 
 		// Test Kommentar
@@ -78,7 +89,7 @@ public class DateiAusgabe {
 		
 		
 		
-
+		//Dateiausgabe nach https://examples.javacodegeeks.com/core-java/nio/bytebuffer/write-append-to-file-with-byte-buffer/
 		try {
 
 			File file = new File("out.dst");
@@ -102,7 +113,10 @@ public class DateiAusgabe {
 		}
 
 	}
-	
+	/**
+	 * Stellt ein Dateiauswahlmenue zur Verfügung und gibt in die entsprechende Datei die Stichbefehle aus. 
+	 * @param text Stichcode als Bytebuffer
+	 */
 	private static void fileAuswahl(ByteBuffer text) {
 		
 		JFileChooser chooser = new JFileChooser();
@@ -115,6 +129,8 @@ public class DateiAusgabe {
 			if (!file.getName().toLowerCase().endsWith(".dst")) {
 		        file = new File(file.getParentFile(), file.getName() + ".dst");
 		      }
+			
+			//Dateiausgabe nach https://examples.javacodegeeks.com/core-java/nio/bytebuffer/write-append-to-file-with-byte-buffer/
 	        try {
 
 				// append or overwrite the file
@@ -133,9 +149,13 @@ public class DateiAusgabe {
 
 	            
 	            
-	        } catch (Exception ex) {
+	        } catch (IOException e) {
+				System.out.println("I/O Error: " + e.getMessage());
+			}
+	        /*
+	        catch (Exception ex) {
 	            ex.printStackTrace();
-	        }
+	        }*/
 	    }
 		//Um beim nächsten Speichern im selben Verzeichnis zu starten
 		verzeichnis = chooser.getCurrentDirectory();
@@ -146,6 +166,10 @@ public class DateiAusgabe {
 		return new FileOutputStream(file, append);
 	}
 
+	/**
+	 * Fügt Stichbefehle und Header zusammen.
+	 * @param text Stichbefehle ohne Header
+	 */
 	public static void dstDatei(ByteBuffer text) {
 
 		String ausgabe;

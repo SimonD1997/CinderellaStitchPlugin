@@ -1,4 +1,1294 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_xLBWkKCIEeyE1JJ91unouw">
-  <modelElement href="platform:/resource/git_CinderellaStitchPlugin/src/git_CinderellaStitchPlugin.uml#_xHlBAKCIEeyE1JJ91unouw"/>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_sgJS4KOpEeyBecvvC5G1RA">
+  <modelElement href="git_CinderellaStitchPlugin.uml#_swmwwaOpEeyBecvvC5G1RA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_s8f3sKOpEeyBecvvC5G1RA" source="_s8hs6aOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s0xfEKOpEeyBecvvC5G1RA"/>
+    <stereotypes xmi:id="_s8f3saOpEeyBecvvC5G1RA" name="Reference">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0yGIKOpEeyBecvvC5G1RA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_s8f3sqOpEeyBecvvC5G1RA" text=""/>
+    <sourceRole xmi:id="_s8f3s6OpEeyBecvvC5G1RA" aggregationKind="NONE" name="">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0xfEaOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s8f3tKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s8f3taOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_s8f3tqOpEeyBecvvC5G1RA" aggregationKind="NONE" name="punkteListe" navigable="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0TlAaOpEeyBecvvC5G1RA"/>
+      <stereotypes xmi:id="_cz_bsKOsEeyBecvvC5G1RA" name="Generics"/>
+      <stereotypes xmi:id="_dPu8gKOsEeyBecvvC5G1RA" name="Generics"/>
+      <stereotypes xmi:id="_dPvjkKOsEeyBecvvC5G1RA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_eNoIIKOsEeyBecvvC5G1RA" name="Generics"/>
+      <visibility xmi:id="_s8f3t6OpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s8f3uKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_s8hF0KOpEeyBecvvC5G1RA" source="_s8hs6aOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s0yGIaOpEeyBecvvC5G1RA"/>
+    <stereotypes xmi:id="_s8hF0aOpEeyBecvvC5G1RA" name="Reference">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0ytMKOpEeyBecvvC5G1RA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_s8hF0qOpEeyBecvvC5G1RA" text=""/>
+    <sourceRole xmi:id="_s8hF06OpEeyBecvvC5G1RA" aggregationKind="NONE" name="">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0yGIqOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s8hF1KOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s8hF1aOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_s8hF1qOpEeyBecvvC5G1RA" aggregationKind="NONE" name="segementListe" navigable="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0UzIaOpEeyBecvvC5G1RA"/>
+      <stereotypes xmi:id="_c0Ap0KOsEeyBecvvC5G1RA" name="Generics"/>
+      <stereotypes xmi:id="_dPx_0aOsEeyBecvvC5G1RA" name="Generics"/>
+      <stereotypes xmi:id="_dPym4KOsEeyBecvvC5G1RA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_eNpWQKOsEeyBecvvC5G1RA" name="Generics"/>
+      <visibility xmi:id="_s8hF16OpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s8hF2KOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_s8hs4KOpEeyBecvvC5G1RA" source="_s8hs6aOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s0ytMaOpEeyBecvvC5G1RA"/>
+    <stereotypes xmi:id="_s8hs4aOpEeyBecvvC5G1RA" name="Reference">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0zUQKOpEeyBecvvC5G1RA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_s8hs4qOpEeyBecvvC5G1RA" text=""/>
+    <sourceRole xmi:id="_s8hs46OpEeyBecvvC5G1RA" aggregationKind="NONE" name="">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0ytMqOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s8hs5KOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s8hs5aOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_s8hs5qOpEeyBecvvC5G1RA" aggregationKind="NONE" name="circleListe" navigable="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0WBQaOpEeyBecvvC5G1RA"/>
+      <stereotypes xmi:id="_c0ACwKOsEeyBecvvC5G1RA" name="Generics"/>
+      <stereotypes xmi:id="_dPwxsKOsEeyBecvvC5G1RA" name="Generics"/>
+      <stereotypes xmi:id="_dPxYwKOsEeyBecvvC5G1RA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_eNovMKOsEeyBecvvC5G1RA" name="Generics"/>
+      <visibility xmi:id="_s8hs56OpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s8hs6KOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_s80n0KOpEeyBecvvC5G1RA" source="_s80n2aOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s0zUQaOpEeyBecvvC5G1RA"/>
+    <stereotypes xmi:id="_s80n0aOpEeyBecvvC5G1RA" name="Reference">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0zUQ6OpEeyBecvvC5G1RA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_s80n0qOpEeyBecvvC5G1RA" text=""/>
+    <sourceRole xmi:id="_s80n06OpEeyBecvvC5G1RA" aggregationKind="NONE" name="">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0zUQqOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s80n1KOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s80n1aOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_s80n1qOpEeyBecvvC5G1RA" aggregationKind="NONE" name="verzeichnis" navigable="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0X2cKOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s80n16OpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s80n2KOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_s8-_4aOpEeyBecvvC5G1RA" targetItem="_s9DRkaOpEeyBecvvC5G1RA" sourceItem="_s8-_4KOpEeyBecvvC5G1RA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_s8_m8aOpEeyBecvvC5G1RA" targetItem="_s9DRmaOpEeyBecvvC5G1RA" sourceItem="_s8_m8KOpEeyBecvvC5G1RA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_s9BcIKOpEeyBecvvC5G1RA" sourceAnchor="428.0,156.0" targetAnchor="139.0,0.0" target="_s9mD4KOpEeyBecvvC5G1RA" source="_s9DRU6OpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s0z7UKOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_6aL58aOrEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false"/>
+    <stereotypes xmi:id="_s9BcIaOpEeyBecvvC5G1RA" name="Reference">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0z7UqOpEeyBecvvC5G1RA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_s9BcIqOpEeyBecvvC5G1RA" text="">
+      <visualProperties xmi:id="_tGorIKOpEeyBecvvC5G1RA" position="-24.0,38.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_s9BcI6OpEeyBecvvC5G1RA" aggregationKind="NONE" name="">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0z7UaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_tGndAqOpEeyBecvvC5G1RA" position="2.0,51.0"/>
+      <visibility xmi:id="_s9BcJKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9BcJaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_s9BcJqOpEeyBecvvC5G1RA" aggregationKind="NONE" name="mittelpunkt" navigable="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0ZEkqOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_tGorIaOpEeyBecvvC5G1RA" position="-118.0,-46.0"/>
+      <visibility xmi:id="_s9BcJ6OpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9BcKKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_s9CDMKOpEeyBecvvC5G1RA" sourceAnchor="397.0,156.0" targetAnchor="108.0,0.0" target="_s9mD4KOpEeyBecvvC5G1RA" source="_s9DRU6OpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s0z7U6OpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_6aL58qOrEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false"/>
+    <stereotypes xmi:id="_s9CDMaOpEeyBecvvC5G1RA" name="Reference">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s00iYKOpEeyBecvvC5G1RA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_s9CDMqOpEeyBecvvC5G1RA" text="">
+      <visualProperties xmi:id="_tGp5QKOpEeyBecvvC5G1RA" position="-39.0,-8.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_s9CDM6OpEeyBecvvC5G1RA" aggregationKind="NONE" name="">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0z7VKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_tGpSMKOpEeyBecvvC5G1RA" position="2.0,26.0"/>
+      <visibility xmi:id="_s9CDNKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9CDNaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_s9CDNqOpEeyBecvvC5G1RA" aggregationKind="NONE" name="anfangsPunkt" navigable="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0ZroaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_tGp5QaOpEeyBecvvC5G1RA" position="41.0,-122.0"/>
+      <visibility xmi:id="_s9CDN6OpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9CDOKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_s9CqQKOpEeyBecvvC5G1RA" sourceAnchor="304.0,156.0" targetAnchor="15.0,0.0" target="_s9mD4KOpEeyBecvvC5G1RA" source="_s9DRU6OpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s00iYaOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_6aL58KOrEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false"/>
+    <stereotypes xmi:id="_s9CqQaOpEeyBecvvC5G1RA" name="Reference">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s00iY6OpEeyBecvvC5G1RA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_s9CqQqOpEeyBecvvC5G1RA" text="">
+      <visualProperties xmi:id="_tGqgUaOpEeyBecvvC5G1RA" position="-39.0,-34.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_s9CqQ6OpEeyBecvvC5G1RA" aggregationKind="NONE" name="">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s00iYqOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_tGqgUKOpEeyBecvvC5G1RA" position="2.0,26.0"/>
+      <visibility xmi:id="_s9CqRKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9CqRaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_s9DRUKOpEeyBecvvC5G1RA" aggregationKind="NONE" name="endPunkt" navigable="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0aSsKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_tGrHYKOpEeyBecvvC5G1RA" position="-68.0,-72.0"/>
+      <visibility xmi:id="_s9DRUaOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9DRUqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_s9PekKOpEeyBecvvC5G1RA" sourceAnchor="15.0,118.0" targetAnchor="207.0,0.0" target="_s9mD4KOpEeyBecvvC5G1RA" source="_s9U-IKOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s00iZKOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_6aNIEKOrEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false"/>
+    <stereotypes xmi:id="_s9Sh46OpEeyBecvvC5G1RA" name="Reference">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s01JcKOpEeyBecvvC5G1RA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_s9Sh4KOpEeyBecvvC5G1RA" text="">
+      <visualProperties xmi:id="_tGrucKOpEeyBecvvC5G1RA" position="-39.0,-8.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_s9Sh4aOpEeyBecvvC5G1RA" aggregationKind="NONE" name="">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s00iZaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_tGrHYaOpEeyBecvvC5G1RA" position="-8.0,77.0"/>
+      <visibility xmi:id="_s9TwAaOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9TwAKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_s9Sh4qOpEeyBecvvC5G1RA" aggregationKind="NONE" name="anfangsPunkt" navigable="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0cH4KOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_tGrucaOpEeyBecvvC5G1RA" position="41.0,-122.0"/>
+      <visibility xmi:id="_s9TwA6OpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9TwAqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_s9QFoKOpEeyBecvvC5G1RA" sourceAnchor="44.0,118.0" targetAnchor="236.0,0.0" target="_s9mD4KOpEeyBecvvC5G1RA" source="_s9U-IKOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s01JcaOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_6aMhAKOrEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false"/>
+    <stereotypes xmi:id="_s9TI86OpEeyBecvvC5G1RA" name="Reference">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s01Jc6OpEeyBecvvC5G1RA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_s9TI8KOpEeyBecvvC5G1RA" text="">
+      <visualProperties xmi:id="_tGsVgaOpEeyBecvvC5G1RA" position="2.0,-8.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_s9TI8aOpEeyBecvvC5G1RA" aggregationKind="NONE" name="">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s01JcqOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_tGsVgKOpEeyBecvvC5G1RA" position="-17.0,51.0"/>
+      <visibility xmi:id="_s9UXEqOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9UXEaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_s9TI8qOpEeyBecvvC5G1RA" aggregationKind="NONE" name="endPunkt" navigable="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0cu8aOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_tGs8kKOpEeyBecvvC5G1RA" position="41.0,-46.0"/>
+      <visibility xmi:id="_s9UXFKOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9UXE6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_s9QssaOpEeyBecvvC5G1RA" targetItem="_s9U-R6OpEeyBecvvC5G1RA" sourceItem="_s9QssKOpEeyBecvvC5G1RA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_s9R60KOpEeyBecvvC5G1RA" targetItem="_s9U-b6OpEeyBecvvC5G1RA" sourceItem="_s9RTwKOpEeyBecvvC5G1RA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_s9R60qOpEeyBecvvC5G1RA" targetItem="_s9U-eqOpEeyBecvvC5G1RA" sourceItem="_s9R60aOpEeyBecvvC5G1RA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:UsageVisual" xmi:id="_-V-sAKOpEeyBecvvC5G1RA" sourceAnchor="222.0,0.0" targetAnchor="202.0,97.0" client="_s9DRU6OpEeyBecvvC5G1RA" supplier="_s9f9QKOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_-V7osKOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_-V-sAaOpEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false"/>
+    <bendpoints xmi:id="_pbm48aOrEeyBecvvC5G1RA" sourceY="-30" targetX="-269" targetY="45"/>
+    <bendpoints xmi:id="_pbm48qOrEeyBecvvC5G1RA" sourceX="269" sourceY="-30" targetY="45"/>
+    <nameVisual xmi:id="_-V-sAqOpEeyBecvvC5G1RA" text=""/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:UsageVisual" xmi:id="_DE88kKOqEeyBecvvC5G1RA" sourceAnchor="232.0,0.0" targetAnchor="202.0,97.0" client="_s9U-IKOpEeyBecvvC5G1RA" supplier="_s9f9QKOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_DE7ucKOqEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_DE88kaOqEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false"/>
+    <bendpoints xmi:id="_pbngAKOrEeyBecvvC5G1RA" sourceY="-68" targetX="222" targetY="45"/>
+    <bendpoints xmi:id="_pbngAaOrEeyBecvvC5G1RA" sourceX="-222" sourceY="-68" targetY="45"/>
+    <nameVisual xmi:id="_DE88kqOqEeyBecvvC5G1RA" text=""/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:UsageVisual" xmi:id="_GNmvkKOqEeyBecvvC5G1RA" sourceAnchor="0.0,106.0" targetAnchor="313.0,58.0" client="_s8hs6aOpEeyBecvvC5G1RA" supplier="_s80n2aOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_GNlhcKOqEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_GNmvkaOqEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false"/>
+    <nameVisual xmi:id="_GNmvkqOqEeyBecvvC5G1RA" text=""/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:UsageVisual" xmi:id="_UqPYQKOqEeyBecvvC5G1RA" sourceAnchor="110.0,0.0" targetAnchor="231.0,118.0" client="_s8hs6aOpEeyBecvvC5G1RA" supplier="_s9U-IKOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_UqOxMKOqEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_UqPYQaOqEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false"/>
+    <nameVisual xmi:id="_UqPYQqOqEeyBecvvC5G1RA" text=""/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:UsageVisual" xmi:id="_XFaaMKOqEeyBecvvC5G1RA" sourceAnchor="14.0,0.0" targetAnchor="327.0,118.0" client="_s8hs6aOpEeyBecvvC5G1RA" supplier="_s9mD4KOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_XFZzIKOqEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_XFaaMaOqEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false"/>
+    <nameVisual xmi:id="_XFaaMqOqEeyBecvvC5G1RA" text=""/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:UsageVisual" xmi:id="_X3diMKOqEeyBecvvC5G1RA" sourceAnchor="0.0,31.0" targetAnchor="220.0,156.0" client="_s8hs6aOpEeyBecvvC5G1RA" supplier="_s9DRU6OpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_X3c7IKOqEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_X3diMaOqEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false"/>
+    <bendpoints xmi:id="_pbm48KOrEeyBecvvC5G1RA" sourceX="-380" targetX="1" targetY="312"/>
+    <nameVisual xmi:id="_X3diMqOqEeyBecvvC5G1RA" text=""/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_s8-_4KOpEeyBecvvC5G1RA" sourceConnectionVisual="_s8-_4aOpEeyBecvvC5G1RA" text="&#xD;&#xA;&#x9; * @param neuX&#xD;&#xA;&#x9; * @return" item="_s9DRkaOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s0t0taOpEeyBecvvC5G1RA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_s8_m8KOpEeyBecvvC5G1RA" sourceConnectionVisual="_s8_m8aOpEeyBecvvC5G1RA" text="&#xD;&#xA;&#x9; * @return" item="_s9DRmaOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s0t0tqOpEeyBecvvC5G1RA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_s9QssKOpEeyBecvvC5G1RA" sourceConnectionVisual="_s9QssaOpEeyBecvvC5G1RA" text="&#xD;&#xA;&#x9; * @return" item="_s9U-R6OpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s0ubwaOpEeyBecvvC5G1RA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_s9RTwKOpEeyBecvvC5G1RA" sourceConnectionVisual="_s9R60KOpEeyBecvvC5G1RA" text="&#xD;&#xA;&#x9; * @param aufloesung in welchem Verhältnis alles ausgegeben wird.&#xD;&#xA;&#x9; * @return" item="_s9U-b6OpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s0t0t6OpEeyBecvvC5G1RA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_s9R60aOpEeyBecvvC5G1RA" sourceConnectionVisual="_s9R60qOpEeyBecvvC5G1RA" text="&#xD;&#xA;&#x9; * @param aufloesung in welchem Verhältnis alles ausgegeben wird.&#xD;&#xA;&#x9; * @return" item="_s9U-eqOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_s0ubwKOpEeyBecvvC5G1RA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s8MVsKOpEeyBecvvC5G1RA" name="Test">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_sxtkAKOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_s8MVsaOpEeyBecvvC5G1RA" position="30.0,30.0" size="-1.0,-1.0" visible="false"/>
+    <visibility xmi:id="_s8MVsqOpEeyBecvvC5G1RA" label="+"/>
+    <operations xmi:id="_s8MVs6OpEeyBecvvC5G1RA" name="main" staticOperation="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sxuLEKOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s8MVtKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s8MVtaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s8MVtqOpEeyBecvvC5G1RA" name="args">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxuyIKOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s8MVt6OpEeyBecvvC5G1RA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_s8MVuKOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s96M8KOpEeyBecvvC5G1RA" name="EndcodeTajimaStitch2">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_sx9boKOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_s96M8aOpEeyBecvvC5G1RA" position="-298.0,-271.0" size="-1.0,-1.0" visible="false"/>
+    <visibility xmi:id="_s96M8qOpEeyBecvvC5G1RA" label="+"/>
+    <operations xmi:id="_s96M86OpEeyBecvvC5G1RA" name="encodeDST" staticOperation="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sx-CsKOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s96M9KOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s96M9aOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s96M9qOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx-Cs6OpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s96M96OpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s96M-KOpEeyBecvvC5G1RA" name="dx">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx-CsaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s96M-aOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s96M-qOpEeyBecvvC5G1RA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s96M-6OpEeyBecvvC5G1RA" name="dy">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx-CsqOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s96M_KOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s96M_aOpEeyBecvvC5G1RA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s96M_qOpEeyBecvvC5G1RA" name="encodeDST" staticOperation="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sx-pwKOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s96M_6OpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s96NAKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s96NAaOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx-pxKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s96NAqOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s96NA6OpEeyBecvvC5G1RA" name="dx">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx-pwaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s96NBKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s96NBaOpEeyBecvvC5G1RA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s96NBqOpEeyBecvvC5G1RA" name="dy">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx-pwqOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s96NB6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s96NCKOpEeyBecvvC5G1RA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s96NCaOpEeyBecvvC5G1RA" name="jump">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx-pw6OpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s96NCqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s96NC6OpEeyBecvvC5G1RA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s86ucKOpEeyBecvvC5G1RA" name="FileNotFoundException">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_sz3gIaOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_s86ucaOpEeyBecvvC5G1RA" position="342.0,129.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_s86ucqOpEeyBecvvC5G1RA" name="Reference">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sz4HMKOpEeyBecvvC5G1RA"/>
+    </stereotypes>
+    <visibility xmi:id="_s86uc6OpEeyBecvvC5G1RA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s9f9QKOpEeyBecvvC5G1RA" supplying="_-V-sAKOpEeyBecvvC5G1RA _DE88kKOqEeyBecvvC5G1RA" name="EndcodeTajimaStitch">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_sx5xQKOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_s9f9QaOpEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false" position="601.0,-7.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s9f9QqOpEeyBecvvC5G1RA" label="+"/>
+    <operations xmi:id="_s9f9Q6OpEeyBecvvC5G1RA" name="encodeDST" staticOperation="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sx6_YKOpEeyBecvvC5G1RA"/>
+      <stereotypes xmi:id="_s9f9RKOpEeyBecvvC5G1RA" name="Array">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx7mcKOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s9f9RaOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9f9RqOpEeyBecvvC5G1RA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_s9f9R6OpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx6_Y6OpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9f9SKOpEeyBecvvC5G1RA" name="byte">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s9f9SaOpEeyBecvvC5G1RA" name="dx">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx6_YaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9f9SqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9f9S6OpEeyBecvvC5G1RA" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9f9TKOpEeyBecvvC5G1RA" name="dy">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx6_YqOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9f9TaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9f9TqOpEeyBecvvC5G1RA" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9f9T6OpEeyBecvvC5G1RA" name="encodeDST" staticOperation="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sx8NgKOpEeyBecvvC5G1RA"/>
+      <stereotypes xmi:id="_s9f9UKOpEeyBecvvC5G1RA" name="Array">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx80kqOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s9f9UaOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9f9UqOpEeyBecvvC5G1RA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_s9f9U6OpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx80kKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9f9VKOpEeyBecvvC5G1RA" name="byte">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s9f9VaOpEeyBecvvC5G1RA" name="dx">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx8NgaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9f9VqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9f9V6OpEeyBecvvC5G1RA" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9f9WKOpEeyBecvvC5G1RA" name="dy">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx8NgqOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9f9WaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9gkUKOpEeyBecvvC5G1RA" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9gkUaOpEeyBecvvC5G1RA" name="jump">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx8Ng6OpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9gkUqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9gkU6OpEeyBecvvC5G1RA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s9DRU6OpEeyBecvvC5G1RA" supplying="_X3diMKOqEeyBecvvC5G1RA" using="_-V-sAKOpEeyBecvvC5G1RA" name="Circle" associationsOut="_s9BcIKOpEeyBecvvC5G1RA _s9CDMKOpEeyBecvvC5G1RA _s9CqQKOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_sxvZMKOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_s9DRVKOpEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false" position="312.0,165.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s9DRVaOpEeyBecvvC5G1RA" label="+"/>
+    <attributes xmi:id="_s9DRVqOpEeyBecvvC5G1RA" name="name">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0YdgaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_iQw4UKOqEeyBecvvC5G1RA" bold="false" color="0,0,0" backgroundColor="0,0,0"/>
+      <visibility xmi:id="_s9DRWKOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9DRWaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s9DRWqOpEeyBecvvC5G1RA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s9DRW6OpEeyBecvvC5G1RA" name="radius">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0ZEkaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_wfMs8KOqEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s9DRXKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9DRXaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s9DRXqOpEeyBecvvC5G1RA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s9DRX6OpEeyBecvvC5G1RA" defaultValue="new Point(&quot;&quot;, 0, 0)" name="mittelpunkt">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0ZEkqOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s9DRYKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9DRYaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s9DRYqOpEeyBecvvC5G1RA" name="Point">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s9DRY6OpEeyBecvvC5G1RA" name="anfangsPunkt">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0ZroaOpEeyBecvvC5G1RA"/>
+      <stereotypes xmi:id="_s9DRZKOpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0ZroqOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s9DRZaOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9DRZqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s9DRZ6OpEeyBecvvC5G1RA" name="Point">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s9DRaKOpEeyBecvvC5G1RA" name="endPunkt">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0aSsKOpEeyBecvvC5G1RA"/>
+      <stereotypes xmi:id="_s9DRaaOpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0aSsaOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s9DRaqOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9DRa6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s9DRbKOpEeyBecvvC5G1RA" name="Point">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_s9DRbaOpEeyBecvvC5G1RA" name="Circle">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sxxOYKOpEeyBecvvC5G1RA"/>
+      <keywords xmi:id="_s9DRbqOpEeyBecvvC5G1RA" keyword="create"/>
+      <visibility xmi:id="_s9DRb6OpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9DRcKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9DRcaOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxycgaOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9DRcqOpEeyBecvvC5G1RA" name="Circle">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sxvZMKOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s9DRc6OpEeyBecvvC5G1RA" name="name">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxxOYaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9DRdKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9DRdaOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9DRdqOpEeyBecvvC5G1RA" name="mittelpunkt">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxx1cKOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9DRd6OpEeyBecvvC5G1RA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_s9DReKOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9DReaOpEeyBecvvC5G1RA" name="radius">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxx1caOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9DReqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9DRe6OpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9DRfKOpEeyBecvvC5G1RA" name="setName">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sxzDkKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_jTm1YKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9DRfaOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9DRfqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s9DRf6OpEeyBecvvC5G1RA" name="name">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxzDkaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9DRgKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9DRgaOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9DRgqOpEeyBecvvC5G1RA" name="getEndPunkt">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sxzqoKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_kdhq0KOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9DRg6OpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9DRhKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9DRhaOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sz9mwKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9DRhqOpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s9DRh6OpEeyBecvvC5G1RA" name="getAnfangsPunkt">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sx0RsKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_k2F70KOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9DRiKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9DRiaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9DRiqOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sz9mwaOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9DRi6OpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s9DRjKOpEeyBecvvC5G1RA" name="getName">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sx0RsaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_lNgWQKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9DRjaOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9DRjqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9DRj6OpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx04wKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9DRkKOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s9DRkaOpEeyBecvvC5G1RA" comments="_s8-_4KOpEeyBecvvC5G1RA" targetConnectionVisual="_s8-_4aOpEeyBecvvC5G1RA" name="kreisGleichung">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sx1f0KOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s9DRkqOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s9DRk6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9DRlKOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sz-N0qOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9DRlaOpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s9DRlqOpEeyBecvvC5G1RA" name="winkel">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx1f0aOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9DRl6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9DRmKOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9DRmaOpEeyBecvvC5G1RA" comments="_s8_m8KOpEeyBecvvC5G1RA" targetConnectionVisual="_s8_m8aOpEeyBecvvC5G1RA" name="umfang">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sx2G4KOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s9DRmqOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s9DRm6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9DRnKOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx2G4aOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9DRnaOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s9DRnqOpEeyBecvvC5G1RA" name="stitchCode">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sz9mwqOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s9DRn6OpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9DRoKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9DRoaOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0OFcKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9DRoqOpEeyBecvvC5G1RA" name="ByteBuffer">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_szxZgaOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s9DRo6OpEeyBecvvC5G1RA" name="punktDavor">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sz-N0KOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9DRpKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9DRpaOpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9DRpqOpEeyBecvvC5G1RA" name="aufloesung">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sz-N0aOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9DRp6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9DRqKOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s9U-IKOpEeyBecvvC5G1RA" supplying="_UqPYQKOqEeyBecvvC5G1RA" using="_DE88kKOqEeyBecvvC5G1RA" name="Segment" associationsOut="_s9PekKOpEeyBecvvC5G1RA _s9QFoKOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_syEwYKOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_s9U-IaOpEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false" position="793.0,203.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s9U-IqOpEeyBecvvC5G1RA" label="+"/>
+    <attributes xmi:id="_s9U-I6OpEeyBecvvC5G1RA" name="anfangsPunkt">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0cH4KOpEeyBecvvC5G1RA"/>
+      <stereotypes xmi:id="_s9U-JKOpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0cu8KOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s9U-JaOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9U-JqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s9U-J6OpEeyBecvvC5G1RA" name="Point">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s9U-KKOpEeyBecvvC5G1RA" name="endPunkt">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0cu8aOpEeyBecvvC5G1RA"/>
+      <stereotypes xmi:id="_s9U-KaOpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0cu8qOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s9U-KqOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9U-K6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s9U-LKOpEeyBecvvC5G1RA" name="Point">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s9U-LaOpEeyBecvvC5G1RA" name="name">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0dWAKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_EKLNUKOsEeyBecvvC5G1RA" bold="false" color="0,0,0"/>
+      <visibility xmi:id="_s9U-L6OpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9U-MKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s9U-MaOpEeyBecvvC5G1RA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_s9U-MqOpEeyBecvvC5G1RA" name="setName">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syHMoKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_4Qh7QKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9U-M6OpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9U-NKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s9U-NaOpEeyBecvvC5G1RA" name="name">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syHMoaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9U-NqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9U-N6OpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9U-OKOpEeyBecvvC5G1RA" name="getAnfangsPunkt">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syHzsKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_4ofvUKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9U-OaOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9U-OqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9U-O6OpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0AqFKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9U-PKOpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s9U-PaOpEeyBecvvC5G1RA" name="getEndPunkt">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syIawKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_5Oy6UKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9U-PqOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9U-P6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9U-QKOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0BRIKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9U-QaOpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s9U-QqOpEeyBecvvC5G1RA" name="getName">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syIawaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_5mmWUKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9U-Q6OpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9U-RKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9U-RaOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syJB0KOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9U-RqOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s9U-R6OpEeyBecvvC5G1RA" comments="_s9QssKOpEeyBecvvC5G1RA" targetConnectionVisual="_s9QssaOpEeyBecvvC5G1RA" name="laenge">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syJo4KOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s9U-SKOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s9U-SaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9U-SqOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syJo4aOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9U-S6OpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s9U-TKOpEeyBecvvC5G1RA" name="square">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syKP8KOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_6LhBQKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9U-TaOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s9U-TqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9U-T6OpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syKP8qOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9U-UKOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s9U-UaOpEeyBecvvC5G1RA" name="zahl">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syKP8aOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9U-UqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9U-U6OpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9U-VKOpEeyBecvvC5G1RA" name="Segment">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sz_b8KOpEeyBecvvC5G1RA"/>
+      <keywords xmi:id="_s9U-VaOpEeyBecvvC5G1RA" keyword="create"/>
+      <visibility xmi:id="_s9U-VqOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9U-V6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9U-WKOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0ADBKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9U-WaOpEeyBecvvC5G1RA" name="Segment">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_syEwYKOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s9U-WqOpEeyBecvvC5G1RA" name="name">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sz_b8aOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9U-W6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9U-XKOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9U-XaOpEeyBecvvC5G1RA" name="anfangsPunkt">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0ADAKOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9U-XqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9U-X6OpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9U-YKOpEeyBecvvC5G1RA" name="endPunkt">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0ADAaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9U-YaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9U-YqOpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9U-Y6OpEeyBecvvC5G1RA" name="setAnfangsPunkt">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0AqEKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_7VrHQKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9U-ZKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9U-ZaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s9U-ZqOpEeyBecvvC5G1RA" name="anfangsPunkt">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0AqEaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9U-Z6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9U-aKOpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9U-aaOpEeyBecvvC5G1RA" name="setEndpunkt">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0AqEqOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_7rMEQKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9U-aqOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9U-a6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s9U-bKOpEeyBecvvC5G1RA" name="endPunkt">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0AqE6OpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9U-baOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9U-bqOpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9U-b6OpEeyBecvvC5G1RA" comments="_s9RTwKOpEeyBecvvC5G1RA" targetConnectionVisual="_s9R60KOpEeyBecvvC5G1RA" name="stitchCode2">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0BRIaOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s9U-cKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9U-caOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9U-cqOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0OsgKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9U-c6OpEeyBecvvC5G1RA" name="ByteBuffer">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_szxZgaOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s9U-dKOpEeyBecvvC5G1RA" name="punktDavor">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0BRIqOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9U-daOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9U-dqOpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9U-d6OpEeyBecvvC5G1RA" name="aufloesung">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0BRI6OpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9U-eKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9U-eaOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9U-eqOpEeyBecvvC5G1RA" comments="_s9R60aOpEeyBecvvC5G1RA" targetConnectionVisual="_s9R60qOpEeyBecvvC5G1RA" name="stitchCode1">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0B4MKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_8yDlsKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9U-e6OpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9U-fKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9U-faOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0OsgaOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9U-fqOpEeyBecvvC5G1RA" name="ByteBuffer">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_szxZgaOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s9U-f6OpEeyBecvvC5G1RA" name="punktDavor">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0B4MaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9U-gKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9U-gaOpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9U-gqOpEeyBecvvC5G1RA" name="aufloesung">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0B4MqOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9U-g6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9U-hKOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s80n2aOpEeyBecvvC5G1RA" supplying="_GNmvkKOqEeyBecvvC5G1RA" name="DateiAusgabe" associationsOut="_s80n0KOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_sxp5oKOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_s80n2qOpEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false" position="404.0,650.0" size="313.0,118.0"/>
+    <visibility xmi:id="_s80n26OpEeyBecvvC5G1RA" label="+"/>
+    <attributes xmi:id="_s80n3KOpEeyBecvvC5G1RA" name="verzeichnis" staticAttribute="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0X2cKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_J7MJsKOsEeyBecvvC5G1RA" bold="false" color="0,0,0"/>
+      <visibility xmi:id="_s80n3qOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s80n36OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s80n4KOpEeyBecvvC5G1RA" name="File">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sz2SAKOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_s80n4aOpEeyBecvvC5G1RA" name="standardFileSave" staticOperation="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0LpMKOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s80n4qOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s80n46OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s80n5KOpEeyBecvvC5G1RA" name="text">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0MQQKOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s80n5aOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s80n5qOpEeyBecvvC5G1RA" name="ByteBuffer">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_szxZgaOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s80n56OpEeyBecvvC5G1RA" name="fileAuswahl" staticOperation="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0MQQaOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s80n6KOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s80n6aOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s80n6qOpEeyBecvvC5G1RA" name="text">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0MQQqOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s80n66OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s80n7KOpEeyBecvvC5G1RA" name="ByteBuffer">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_szxZgaOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s80n7aOpEeyBecvvC5G1RA" name="extracted" staticOperation="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0MQQ6OpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_fvue8KOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s80n7qOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s80n76OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s80n8KOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0M3UaOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s80n8aOpEeyBecvvC5G1RA" name="FileOutputStream">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sz4HMaOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s80n8qOpEeyBecvvC5G1RA" name="file">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0MQRKOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s80n86OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s80n9KOpEeyBecvvC5G1RA" name="File">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sz2SAKOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s80n9aOpEeyBecvvC5G1RA" name="append">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0M3UKOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s80n9qOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s80n96OpEeyBecvvC5G1RA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s80n-KOpEeyBecvvC5G1RA" name="dstDatei" staticOperation="true">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0NeYKOpEeyBecvvC5G1RA"/>
+      <visibility xmi:id="_s80n-aOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s80n-qOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s80n-6OpEeyBecvvC5G1RA" name="text">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0NeYaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s80n_KOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s80n_aOpEeyBecvvC5G1RA" name="ByteBuffer">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_szxZgaOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s8hs6aOpEeyBecvvC5G1RA" using="_GNmvkKOqEeyBecvvC5G1RA _UqPYQKOqEeyBecvvC5G1RA _XFaaMKOqEeyBecvvC5G1RA _X3diMKOqEeyBecvvC5G1RA" name="CinderellaStitchPlugin" associationsOut="_s8f3sKOpEeyBecvvC5G1RA _s8hF0KOpEeyBecvvC5G1RA _s8hs4KOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_sxYz4KOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_s8hs6qOpEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false" position="914.0,602.0" size="370.0,180.0"/>
+    <visibility xmi:id="_s8hs66OpEeyBecvvC5G1RA" label="+"/>
+    <attributes xmi:id="_s8hs7KOpEeyBecvvC5G1RA" defaultValue="1" name="aufloesung">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0QhsKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_JIkr4KOqEeyBecvvC5G1RA" visible="false"/>
+      <stereotypes xmi:id="_s8hs7aOpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0RIwKOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s8hs7qOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s8hs76OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s8hs8KOpEeyBecvvC5G1RA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s8hs8aOpEeyBecvvC5G1RA" name="ecke1">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0RIwaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_ImZL4KOqEeyBecvvC5G1RA" visible="false"/>
+      <stereotypes xmi:id="_s8hs8qOpEeyBecvvC5G1RA" name="Array">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0Rv0KOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s8hs86OpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0Rv0aOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s8hs9KOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s8hs9aOpEeyBecvvC5G1RA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_s8hs9qOpEeyBecvvC5G1RA" name="Double">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0E7gaOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s8hs96OpEeyBecvvC5G1RA" name="ecke2">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0Rv0qOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_ImZy8aOqEeyBecvvC5G1RA" visible="false"/>
+      <stereotypes xmi:id="_s8hs-KOpEeyBecvvC5G1RA" name="Array">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0Rv1KOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s8hs-aOpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0SW4KOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s8hs-qOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s8hs-6OpEeyBecvvC5G1RA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_s8hs_KOpEeyBecvvC5G1RA" name="Double">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0E7gaOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s8hs_aOpEeyBecvvC5G1RA" name="ecke3">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0SW4aOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_ImZy8qOqEeyBecvvC5G1RA" visible="false"/>
+      <stereotypes xmi:id="_s8hs_qOpEeyBecvvC5G1RA" name="Array">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0SW46OpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s8hs_6OpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0S98KOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htAKOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s8htAaOpEeyBecvvC5G1RA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_s8htAqOpEeyBecvvC5G1RA" name="Double">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0E7gaOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s8htA6OpEeyBecvvC5G1RA" name="ecke4">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0S98aOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_ImZy8KOqEeyBecvvC5G1RA" visible="false"/>
+      <stereotypes xmi:id="_s8htBKOpEeyBecvvC5G1RA" name="Array">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0S986OpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s8htBaOpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0TlAKOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htBqOpEeyBecvvC5G1RA" label="-"/>
+      <cardinality xmi:id="_s8htB6OpEeyBecvvC5G1RA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_s8htCKOpEeyBecvvC5G1RA" name="Double">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0E7gaOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s8htCaOpEeyBecvvC5G1RA" defaultValue="new ArrayList&lt;>()" name="punkteListe">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0TlAaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_I74BwKOsEeyBecvvC5G1RA" bold="false" color="0,0,0"/>
+      <stereotypes xmi:id="_s8htCqOpEeyBecvvC5G1RA" name="Generics">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0UMEKOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htDKOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s8htDaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s8htDqOpEeyBecvvC5G1RA" name="ArrayList">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_szwLYKOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s8htD6OpEeyBecvvC5G1RA" defaultValue="new ArrayList&lt;>()" name="segementListe">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0UzIaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_I74o0KOsEeyBecvvC5G1RA" bold="false" color="0,0,0"/>
+      <stereotypes xmi:id="_s8htEKOpEeyBecvvC5G1RA" name="Generics">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0VaMKOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htEqOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s8htE6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s8htFKOpEeyBecvvC5G1RA" name="ArrayList">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_szwLYKOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s8htFaOpEeyBecvvC5G1RA" defaultValue="new ArrayList&lt;>()" name="circleListe">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0WBQaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_I74BwaOsEeyBecvvC5G1RA" bold="false" color="0,0,0"/>
+      <stereotypes xmi:id="_s8htFqOpEeyBecvvC5G1RA" name="Generics">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0WoUKOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htGKOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s8htGaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s8htGqOpEeyBecvvC5G1RA" name="ArrayList">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_szwLYKOpEeyBecvvC5G1RA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_s8htG6OpEeyBecvvC5G1RA" name="getName">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sxbQIKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_KDAT0KOqEeyBecvvC5G1RA" visible="false"/>
+      <stereotypes xmi:id="_s8htHKOpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxceQaOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s8htHaOpEeyBecvvC5G1RA" name="Annotations">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxdsYKOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htHqOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s8htH6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s8htIKOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxceQKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s8htIaOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s8htIqOpEeyBecvvC5G1RA" name="getAuthor">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sxeTcaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_KDAT0aOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s8htI6OpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s8htJKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s8htJaOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxe6gKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s8htJqOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s8htJ6OpEeyBecvvC5G1RA" name="startProgrammAusgabe">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sxgvsKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_LaQIsKOsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      <stereotypes xmi:id="_s8htKaOpEeyBecvvC5G1RA" name="Annotations">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxh90KOpEeyBecvvC5G1RA"/>
+        <visualProperties xmi:id="_LaQvwaOsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htKqOpEeyBecvvC5G1RA" label="+">
+        <visualProperties xmi:id="_LaQvwqOsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      </visibility>
+      <cardinality xmi:id="_s8htK6OpEeyBecvvC5G1RA" label="1" max="1" min="1">
+        <visualProperties xmi:id="_LaQvw6OsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      </cardinality>
+    </operations>
+    <operations xmi:id="_s8htLKOpEeyBecvvC5G1RA" name="loadProgramm">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_sxik4KOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_K_bf0KOqEeyBecvvC5G1RA" visible="false"/>
+      <stereotypes xmi:id="_s8htLaOpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxjzAKOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s8htLqOpEeyBecvvC5G1RA" name="Annotations">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxjzAaOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htL6OpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s8htMKOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s8htMaOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_sxjL8KOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s8htMqOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s8htM6OpEeyBecvvC5G1RA" name="getScreenbound">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0GJoKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_KkCkUKOqEeyBecvvC5G1RA" visible="false"/>
+      <stereotypes xmi:id="_s8htNKOpEeyBecvvC5G1RA" name="LegacyStyledElement">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0GwsKOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s8htNaOpEeyBecvvC5G1RA" name="Annotations">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0HXwKOpEeyBecvvC5G1RA"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htNqOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s8htN6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s8htOKOpEeyBecvvC5G1RA" name="forms">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0GJoaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s8htOaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s8htOqOpEeyBecvvC5G1RA" name="ArrayList">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_szwLYKOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s8htO6OpEeyBecvvC5G1RA" name="getPoints">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0HXw6OpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_Q1BvUKOsEeyBecvvC5G1RA" bold="false" italic="false"/>
+      <stereotypes xmi:id="_s8htPaOpEeyBecvvC5G1RA" name="Annotations">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0Il4KOpEeyBecvvC5G1RA"/>
+        <visualProperties xmi:id="_Q1BvUaOsEeyBecvvC5G1RA" bold="false" italic="false"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htPqOpEeyBecvvC5G1RA" label="+">
+        <visualProperties xmi:id="_Q1CWYKOsEeyBecvvC5G1RA" bold="false" italic="false"/>
+      </visibility>
+      <cardinality xmi:id="_s8htP6OpEeyBecvvC5G1RA" label="1" max="1" min="1">
+        <visualProperties xmi:id="_Q1CWYaOsEeyBecvvC5G1RA" bold="false" italic="false"/>
+      </cardinality>
+      <parameters xmi:id="_s8htQKOpEeyBecvvC5G1RA" name="forms">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0HXxKOpEeyBecvvC5G1RA"/>
+        <visualProperties xmi:id="_Q1CWYqOsEeyBecvvC5G1RA" bold="false" italic="false"/>
+        <cardinality xmi:id="_s8htQaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s8htQqOpEeyBecvvC5G1RA" name="ArrayList">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_szwLYKOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s8htQ6OpEeyBecvvC5G1RA" name="getSegments">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0Il46OpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_RkPlwKOsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      <stereotypes xmi:id="_s8htRaOpEeyBecvvC5G1RA" name="Annotations">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0J0AKOpEeyBecvvC5G1RA"/>
+        <visualProperties xmi:id="_RkQM0aOsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htRqOpEeyBecvvC5G1RA" label="+">
+        <visualProperties xmi:id="_RkQM0qOsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      </visibility>
+      <cardinality xmi:id="_s8htR6OpEeyBecvvC5G1RA" label="1" max="1" min="1">
+        <visualProperties xmi:id="_RkQM06OsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      </cardinality>
+      <parameters xmi:id="_s8htSKOpEeyBecvvC5G1RA" name="forms">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0Il5KOpEeyBecvvC5G1RA"/>
+        <visualProperties xmi:id="_RkQM1KOsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+        <cardinality xmi:id="_s8htSaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s8htSqOpEeyBecvvC5G1RA" name="ArrayList">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_szwLYKOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s8htS6OpEeyBecvvC5G1RA" name="getCircles">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0J0A6OpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_R-USoKOsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      <stereotypes xmi:id="_s8htTaOpEeyBecvvC5G1RA" name="Annotations">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0LCIKOpEeyBecvvC5G1RA"/>
+        <visualProperties xmi:id="_R-USoqOsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      </stereotypes>
+      <visibility xmi:id="_s8htTqOpEeyBecvvC5G1RA" label="+">
+        <visualProperties xmi:id="_R-USo6OsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      </visibility>
+      <cardinality xmi:id="_s8htT6OpEeyBecvvC5G1RA" label="1" max="1" min="1">
+        <visualProperties xmi:id="_R-USpKOsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+      </cardinality>
+      <parameters xmi:id="_s8htUKOpEeyBecvvC5G1RA" name="forms">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_s0J0BKOpEeyBecvvC5G1RA"/>
+        <visualProperties xmi:id="_R-USpaOsEeyBecvvC5G1RA" bold="false" italic="false" color="0,0,0"/>
+        <cardinality xmi:id="_s8htUaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s8htUqOpEeyBecvvC5G1RA" name="ArrayList">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_szwLYKOpEeyBecvvC5G1RA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s9mD4KOpEeyBecvvC5G1RA" supplying="_XFaaMKOqEeyBecvvC5G1RA" name="Point" associationsIn="_s9BcIKOpEeyBecvvC5G1RA _s9CDMKOpEeyBecvvC5G1RA _s9CqQKOpEeyBecvvC5G1RA _s9PekKOpEeyBecvvC5G1RA _s9QFoKOpEeyBecvvC5G1RA">
+    <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+    <visualProperties xmi:id="_s9mD4aOpEeyBecvvC5G1RA" bold="true" fontFace="Segoe UI" fontSize="11" italic="false" position="601.0,444.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s9mD4qOpEeyBecvvC5G1RA" label="+"/>
+    <attributes xmi:id="_s9mD46OpEeyBecvvC5G1RA" name="x">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0a5wKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_GWt9YKOsEeyBecvvC5G1RA" bold="false" color="0,0,0"/>
+      <visibility xmi:id="_s9mD5aOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9mD5qOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s9mD56OpEeyBecvvC5G1RA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s9mD6KOpEeyBecvvC5G1RA" name="y">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0a5wqOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_GWt9YqOsEeyBecvvC5G1RA" bold="false" color="0,0,0"/>
+      <visibility xmi:id="_s9mD6qOpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9mD66OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s9mD7KOpEeyBecvvC5G1RA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s9mD7aOpEeyBecvvC5G1RA" name="name">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_s0bg0aOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_GWt9YaOsEeyBecvvC5G1RA" bold="false" color="0,0,0"/>
+      <visibility xmi:id="_s9mD76OpEeyBecvvC5G1RA" label="~"/>
+      <cardinality xmi:id="_s9mD8KOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <type xmi:id="_s9mD8aOpEeyBecvvC5G1RA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_s9mD8qOpEeyBecvvC5G1RA" name="Point">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syAe8KOpEeyBecvvC5G1RA"/>
+      <keywords xmi:id="_s9mD86OpEeyBecvvC5G1RA" keyword="create"/>
+      <visibility xmi:id="_s9mD9KOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9mD9aOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9mD9qOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syBGAaOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9mD96OpEeyBecvvC5G1RA" name="Point">
+          <modelElement href="git_CinderellaStitchPlugin.uml#_sx_Q0KOpEeyBecvvC5G1RA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s9mD-KOpEeyBecvvC5G1RA" name="name">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syAe8aOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9mD-aOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9mD-qOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9mD-6OpEeyBecvvC5G1RA" name="x">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syAe8qOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9mD_KOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9mD_aOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s9mD_qOpEeyBecvvC5G1RA" name="y">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syAe86OpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9mD_6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9mEAKOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9mEAaOpEeyBecvvC5G1RA" name="setX">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syBGAqOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_-VJwIKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9mEAqOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9mEA6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s9mEBKOpEeyBecvvC5G1RA" name="x">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syBGA6OpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9mEBaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9mEBqOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9mEB6OpEeyBecvvC5G1RA" name="setY">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syBtEKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_-orJEKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9mECKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9mECaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s9mECqOpEeyBecvvC5G1RA" name="y">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syBtEaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9mEC6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9mEDKOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9mEDaOpEeyBecvvC5G1RA" name="setName">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syCUIKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="_--4poKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9mEDqOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9mED6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_s9mEEKOpEeyBecvvC5G1RA" name="name">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syCUIaOpEeyBecvvC5G1RA"/>
+        <cardinality xmi:id="_s9mEEaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+        <type xmi:id="_s9mEEqOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s9mEE6OpEeyBecvvC5G1RA" name="getX">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syC7MKOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="__SaCkKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9mEFKOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9mEFaOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9mEFqOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syC7MaOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9mEF6OpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s9mEGKOpEeyBecvvC5G1RA" name="getY">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syC7MqOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="__oiDkKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9mEGaOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9mEGqOpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9mEG6OpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syDiQKOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9mEHKOpEeyBecvvC5G1RA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s9mEHaOpEeyBecvvC5G1RA" name="getName">
+      <modelElement href="git_CinderellaStitchPlugin.uml#_syDiQaOpEeyBecvvC5G1RA"/>
+      <visualProperties xmi:id="__6n5IKOqEeyBecvvC5G1RA" visible="false"/>
+      <visibility xmi:id="_s9mEHqOpEeyBecvvC5G1RA" label="+"/>
+      <cardinality xmi:id="_s9mEH6OpEeyBecvvC5G1RA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s9mEIKOpEeyBecvvC5G1RA">
+        <modelElement href="git_CinderellaStitchPlugin.uml#_syDiQqOpEeyBecvvC5G1RA"/>
+        <type xmi:id="_s9mEIaOpEeyBecvvC5G1RA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
