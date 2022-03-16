@@ -83,7 +83,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 			// byte[] test2 = s.stitchCode().array();
 			// test = s.stitchCode();
 
-			ausgabe.put(s.stitchCode2(davor, aufloesung).flip());
+			ausgabe.put(s.stitchCode(davor, aufloesung).flip());
 			davor = s.getEndPunkt();
 			// test.flip();
 			// ausgabe.put(test);
@@ -257,49 +257,7 @@ public class CinderellaStitchPlugin extends CindyScriptPlugin {
 	@CindyScript("loadProgramm")
 	public String loadProgramm() {
 
-		return ("createtool([\"Move\",\"Point\",\"Segment\",\"Circle\"],2,2,flipped->true);\n"
-				+ "\n"
-				+ "\n"
-				+ "\n"
-				+ "\n"
-				+ "programmAufruf():=(\n"
-				+ "use(\"CinderellaStitchPlugin\");\n"
-				+ "println(Screenbounds());\n"
-				+ "println(getScreenbound(Screenbounds())); //getter im Plugin\n"
-				+ "\n"
-				+ "//Punkte abrufen\n"
-				+ "pts2;\n"
-				+ "forall(allpoints(),\n"
-				+ "pts1 = [[#,#.x,#.y]];\n"
-				+ "println(pts1);\n"
-				+ "pts2 = concat(pts2,pts1);\n"
-				+ ");\n"
-				+ "println(pts2);\n"
-				+ "getPoints(pts2); //getter im Plugin\n"
-				+ "\n"
-				+ "//Strecken abrufen\n"
-				+ "seg2;\n"
-				+ "forall(allsegments(),\n"
-				+ "seg1 = [[#,inspect(#,\"definition\")]];\n"
-				+ "seg2 = concat(seg2,seg1);\n"
-				+ ");\n"
-				+ "println(seg2);\n"
-				+ "getSegments(seg2); //getter im Plugin\n"
-				+ "\n"
-				+ "//Strecken abrufen\n"
-				+ "circ2;\n"
-				+ "forall(allcircles(),\n"
-				+ "circ1 = [[#,#.center,#.radius]];\n"
-				+ "circ2 = concat(circ2,circ1);\n"
-				+ ");\n"
-				+ "println(circ2);\n"
-				+ "getCircles(circ2); //getter im Plugin\n"
-				+ "\n"
-				+ "startProgrammAusgabe();\n"
-				+ "clear(); //alle Variablen löschen\n"
-				+ ");\n"
-				+ "\n"
-				+ "programmAufruf();");
+		return ("");
 	}
 
 }

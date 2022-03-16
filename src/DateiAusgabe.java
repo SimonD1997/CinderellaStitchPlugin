@@ -36,58 +36,6 @@ public class DateiAusgabe {
 	 */
 	private static void standardFileSave(ByteBuffer text) {
 
-		// Test Kommentar
-
-		String dateiName = "Test.dst";
-
-		OutputStream outputStream;
-		OutputStreamWriter writer;
-
-		try {
-			// Datei oeffnen.
-			// Achtung: vorhandene Datei wird ueberschrieben!
-			outputStream = new FileOutputStream(dateiName);
-			writer = new OutputStreamWriter(outputStream, "ASCII");
-
-			String test = "Hallo:";
-
-			char test2 = (char) 0x83;
-
-			// "ISO-8859-1"
-			Byte test3 = (byte) 0b10000011;
-
-			test += test2;
-			test += test3;
-
-			byte[] bytes = test.getBytes();
-
-			writer.write(Charset.defaultCharset().displayName());
-
-			StringBuilder sb = new StringBuilder();
-			for (byte b : bytes) {
-				sb.append(String.format("%02X ", b));
-			}
-			System.out.println(sb.toString());
-			// prints "FF 00 01 02 03 "
-
-			// b= test.getBytes();
-
-			// Text schreiben
-			writer.write(sb.toString());
-
-			// Datei schließen nicht vergessen, sonst können Daten verloren gehen!
-			writer.close();
-
-		} catch (IOException e) {
-			// Mögliche Fehler: z.B. Datei oder Verzeichnis schreibgeschützte
-			System.out.println("Fehler beim Datei schreiben: " + e.getMessage());
-
-		}
-
-		
-		//byte[] bytes = text.getBytes();
-		
-		
 		
 		//Dateiausgabe nach https://examples.javacodegeeks.com/core-java/nio/bytebuffer/write-append-to-file-with-byte-buffer/
 		try {
@@ -206,13 +154,6 @@ public class DateiAusgabe {
 		byte[] textBytes = text.array();
 		buffer.put(textBytes);
 		
-		
-
-		// testausgabe
-		// ausgabe += "" + end1 + end1 + (char) 0x03 + (char) 0x09 + (char) 0x04 +
-		// (char) 0x07;
-
-		// ende
 		
 		ausgabe = "" + (char) end1 + (char) end1 + (char) charakter;
 		bytes = ausgabe.getBytes();

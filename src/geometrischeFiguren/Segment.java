@@ -80,121 +80,16 @@ public class Segment {
 	 * return (ausgabe); }
 	 */
 
+	
+
 	/**
-	 * Gibt den Stichcode der Strecke aus.
+	 * Gibt den Stichcode der Strecke aus. 
 	 * 
 	 * @param punktDavor der vorige endpunkt des letzten Objekts
 	 * @param aufloesung in welchem Verhältnis alles ausgegeben wird.
 	 * @return Stichcode der Strecke mit Zwischenstichen
 	 */
-	public ByteBuffer stitchCode2(Point punktDavor, double aufloesung) {
-
-		// Berechnen von zischenstichen. 5-7 mmm 2,5 - 3.0 mm
-		// brother max 5mm
-		// best 1,5mm
-		// double aufloesung = 1;
-		int abstaende = (int) (15 * aufloesung); // umgerechnet in Nadelbewegungen mit 0,1mm
-
-		int anzahlStiche = (int) (laenge() / abstaende); // abgerundet, da sonst ein Stich unter Minimalabstand fällt
-		int stichZaehler = 0;
-
-		ByteBuffer ausgabe = ByteBuffer.allocate(10000); // TODO noch schauen, das der Buffer nicht zu
-		// groß ist, sonst gibt es zu viele stellen.
-
-		if (punktDavor.equals(this.anfangsPunkt)) {
-			long bildWechselX = (long) anfangsPunkt.x - (long) punktDavor.x;
-			long bildWechselY = (long) anfangsPunkt.y - (long) punktDavor.y;
-
-			// Bildwechsel zur nächsten Form mithilfe eines oder mehrer Sprungstiche
-			while (bildWechselX > 121 || bildWechselX < -121 || bildWechselY > 121 || bildWechselY < -121) {
-
-				long xAusgabeSpeicher = 0;
-				long yAusgabeSpeicher = 0;
-				if (bildWechselX > 121) {
-					xAusgabeSpeicher = 121;
-					bildWechselX -= 121;
-				} else if (bildWechselX < -121) {
-					xAusgabeSpeicher = -121;
-					bildWechselX += 121;
-				} else if (bildWechselY > 121) {
-					yAusgabeSpeicher = 121;
-					bildWechselY -= 121;
-				} else if (bildWechselY < -121) {
-					yAusgabeSpeicher = -121;
-					bildWechselY += 121;
-				}
-				ausgabe.put(EndcodeTajimaStitch.encodeDST(xAusgabeSpeicher, yAusgabeSpeicher, true));
-
-				stichZaehler += 1;
-
-			}
-
-			ausgabe.put(EndcodeTajimaStitch.encodeDST(bildWechselX, bildWechselY, true));
-
-			ausgabe.put(EndcodeTajimaStitch.encodeDST(0, 0));
-			stichZaehler += 2;
-
-		}
-
-		// Richtungsvektor
-		long endpunktX = (long) endPunkt.x;
-		long endpunktY = (long) endPunkt.y;
-		long anfangspunktX = (long) anfangsPunkt.x;
-		long anfangspunktY = (long) anfangsPunkt.y;
-
-		long vekX = (endpunktX - anfangspunktX);
-		long vekY = endpunktY - anfangspunktY;
-
-		double aktuellerPunktX = anfangspunktX;
-		double aktuellerPunktY = anfangspunktY;
-
-		double davorPunktX = anfangspunktX;
-		double davorPunktY = anfangspunktY;
-
-		// zwischenschritte einzeichnen
-		for (int i = 1; i < anzahlStiche; i++) {
-
-			aktuellerPunktX = anfangspunktX + ((i / (double) anzahlStiche) * vekX);
-			aktuellerPunktY = anfangspunktY + ((i / (double) anzahlStiche) * vekY);
-
-			ausgabe.put(EndcodeTajimaStitch.encodeDST((long) aktuellerPunktX - (long) davorPunktX,
-					(long) aktuellerPunktY - (long) davorPunktY));
-
-			davorPunktX = aktuellerPunktX;
-			davorPunktY = aktuellerPunktY;
-
-			stichZaehler += 1;
-		}
-
-		if (anzahlStiche == 0) {
-			ausgabe.put(EndcodeTajimaStitch.encodeDST(vekX, vekY, true));
-
-			stichZaehler += 1;
-
-			// falls es keine zwischenschritte gab, direkt den Endpunkt einzeichnen
-		} else {
-			ausgabe.put(EndcodeTajimaStitch.encodeDST((long) endpunktX - (long) aktuellerPunktX,
-					(long) endpunktY - (long) aktuellerPunktY));
-			stichZaehler += 1;
-		}
-
-		ByteBuffer ausgabe2 = ByteBuffer.allocate((stichZaehler * 3) + 3);
-		ausgabe.flip(); // verhindert, dass die restlichen stellen des unbeschriebenen buffer als null
-						// werte ausgegeben werden.
-		ausgabe2.put(ausgabe);
-
-		return (ausgabe);
-	}
-
-	/**
-	 * Gibt den Stichcode der Strecke aus. Berechnet aber die zwischen Punkte um
-	 * verschiebung durch Rundung auszugleichen.
-	 * 
-	 * @param punktDavor der vorige endpunkt des letzten Objekts
-	 * @param aufloesung in welchem Verhältnis alles ausgegeben wird.
-	 * @return Stichcode der Strecke mit Zwischenstichen
-	 */
-	public ByteBuffer stitchCode1(Point punktDavor, double aufloesung) {
+	public ByteBuffer stitchCode(Point punktDavor, double aufloesung) {
 
 		// Berechnen von zischenstichen. 5-7 mmm 2,5 - 3.0 mm
 		// brother max 5mm
